@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Merienda');
+
+svg{
+  height: auto;
+  width: 100%;
+}
+body {
+  font-family: 'Merienda', cursive;
+  position: relative;
+}
+.container{
+    width: 100%;
+    height: auto;
+}
+.wavw2{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+}
+    </style>
+</head>
+<body> 
+    <div class="container">
+        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"><path id="wave" d="2"/></svg>
+    </div>
+    <div class="container wave2">
+        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" ><path id="wave" d="2"/></svg>
+    </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+      <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/jquery.wavify.js"></script>
+
+      <script>
+$('#wave').wavify({
+  height: 80,
+  bones: 3,
+  amplitude: 50,
+  color: '#0bd',
+  speed: .35
+});
+$('#wave2').wavify({
+  height: 100,
+  bones: 2,
+  amplitude: 100,
+  color: '＃fff000',
+  speed: .35
+});
+
+      </script>
+</body>
+</html>

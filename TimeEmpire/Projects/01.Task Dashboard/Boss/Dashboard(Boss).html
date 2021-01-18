@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard(Boss)</title>
+    <link rel="stylesheet" href="/TimeEmpire/Projects/00.Template/css/template.css">
+    <link rel="stylesheet" href="/TimeEmpire/Projects/01.Task Dashboard/Boss/css/TD.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.css">
+</head>
+<body class="d-flex">
+    <nav>
+        <div class="sideNav">
+            <div class="logo m-a">
+                <img src="/TimeEmpire/Projects/99.img/系統wireframe工作區2021-01-14-29.png" alt="">
+            </div>
+            <div class="main-btn m-a">TimeEmpire儀表板</div>
+            <div class="btn-group d-flex m-a">
+                <div class="btn">任務<br>管理</div>
+                <div class="btn">專案<br>管理</div>
+            </div>
+            <div class="btn-group d-flex m-a">
+                <div class="btn">點數<br>歷程</div>
+                <div class="btn">工作<br>日誌</div>
+            </div>
+            <div class="notice-window m-a d-flex">
+                <div class="notice-part d-flex">
+                    <img src="/TimeEmpire/Projects/99.img/系統wireframe工作區2021-01-14-30.png" width="140px">
+                    <div class="notice"></div>
+                </div>
+                <div class="logout-btn m-a">登出</div>
+            </div>
+            
+
+        </div>
+    </nav>
+    <main class="d-flex">
+        <div class="leftSide">
+            <div class="greeting d-flex">
+                <img src="/TimeEmpire/Projects/99.img/系統wireframe工作區2021-01-15-29.png" alt="">
+                <div class="greeting-windows"></div>
+            </div>
+            <div class="projects_owned">
+                <!-- use table套件 -->
+                <table  style="width:90%" id="myTable" class="display">
+                    <thead>
+                        <tr>
+                            <th>所有專案</th>
+                            <th>剩餘專案</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ＸＸＸ專案</td>
+                            <td>０</td>
+                        </tr>
+                        <tr>
+                            <td>ＸYＸ專案</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>ＸYＸ專案</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>ＸYＸ專案</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>ＸYＸ專案</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>ＸYＸ專案</td>
+                            <td>3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="prompt-box d-flex">
+                <div class="prompt-windows"></div>
+                <img src="/TimeEmpire/Projects/99.img/系統wireframe工作區2021-01-15-30.png" alt="">
+            </div>
+        </div>
+        <div class="rightSide">
+            <div class="personal-inform d-flex">
+                <table  style="width:100%" id="myTable" class="display">
+                    <tbody>
+                        <tr>
+                            <th>姓名&ensp;&ensp;&ensp;&ensp;</th>
+                            <td>詹大介</td>
+                        </tr>
+                        <tr>
+                            <th>業務職掌</th>
+                            <td>熙伊歐</td>
+                        </tr>
+                        <tr>
+                            <th>所屬部門</th>
+                            <td>老闆是我</td>
+                        </tr>
+                        <tr>
+                            <th>員工編號</th>
+                            <td>００００１</td>
+                        </tr>
+                        <tr>
+                            <th>聯絡電話</th>
+                            <td>０９０９－０００－１１１</td>
+                        </tr>
+                        <tr>
+                            <th>電子信箱</th>
+                            <td>０００＠outlook.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="personal-photo"></div>
+            </div>
+            <!-- pie chart套件 -->
+            <div class="pie-chart">
+                <h1>本月專案概況</h1>
+                <canvas  id="myChart"></canvas>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <!-- pie chart -->
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+    
+        var myPieChart = new Chart(ctx, {
+        type: 'doughnut',
+        
+        data: {
+            
+            labels: ['執行中', '已結案', '新專案' ],
+            datasets: [{
+                backgroundColor: ['#936331','#8FC0C4','#DD8B63'],
+                data: [30, 50, 40]
+            }]
+        },
+        options: {    
+            legend:{
+                position:'top',
+            }
+            
+        }
+    });
+    
+    
+        </script>
+        <!-- 表格 -->
+      <script>
+          $(document).ready( function () {
+              $('#myTable').DataTable({
+                  "paging":   false,
+                  // "ordering": false, 
+                  "info":     false,
+                  "searching":   false
+              });
+          } );
+      </script>
+</body>
+</html>

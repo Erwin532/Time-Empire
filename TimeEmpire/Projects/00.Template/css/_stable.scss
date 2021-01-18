@@ -1,0 +1,48 @@
+$xl-font:60px;
+$l-font:48px;
+$md-font:36px;
+$sm-font:24px;
+$p-font:20px;
+$font:16px;
+
+
+$color:#FFFFFF;
+$color:#FFFFFF;
+$color:#FFFFFF;
+$color:#FFFFFF;
+//sideNav
+$sideNav-color:#F4F2F2;
+$main-color:#F0E09C;
+$logOut-color:#354D6D;
+$btn-color:#E5CFBA;
+
+$hover-btn:#E48E64;
+
+
+$personal-data-color: #92C6CA;
+//30%->100%  deg315
+@mixin mid-text($i){ 
+        text-align: center;
+        line-height: $i;
+}  
+
+@mixin btn{
+    width:140px; 
+    height:140px;
+    background-color:$btn-color;
+    border-radius: 20px;
+    font-size: $md-font;   
+    text-align: center;
+    line-height: 40px;
+    padding-top: 25px;
+}
+
+@mixin main-btn {
+    width: 291px;
+    height: 66px;
+    background-color:$btn-color;
+    border-radius: 10px;
+    font-size: $md-font;
+    text-align: center;
+    line-height: 66px;
+}

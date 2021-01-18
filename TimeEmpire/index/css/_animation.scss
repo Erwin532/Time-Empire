@@ -1,0 +1,52 @@
+// 波浪動畫
+@keyframes roll{
+    0%{
+        transform: translate(-50%,0) rotateZ(0deg);
+    }
+    50%{
+        transform: translate(-50%,-5%) rotateZ(180deg);
+    }
+    100%{
+        transform: translate(-50%,0) rotateZ(360deg);
+    }
+}
+
+@keyframes rolls{
+    0%{
+        transform: translate(-50%,-90%) rotateZ(0deg);
+    }
+    50%{
+        transform: translate(-50%,-90%) rotateZ(180deg);
+    }
+    100%{
+        transform: translate(-50%,-90%) rotateZ(360deg);
+    }
+}
+
+@keyframes move{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(45deg);
+
+    }
+}
+
+@keyframes wave {
+    0% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: -1600px;
+    }
+  }
+  
+  @keyframes swell {
+    0%, 100% {
+      transform: translate3d(0,-25px,0);
+    }
+    50% {
+      transform: translate3d(0,5px,0);
+    }
+  }

@@ -1,0 +1,69 @@
+.leftSide{
+    width: 50%;
+    height: 100%;
+    .greeting{
+        width: 100%;
+        height: 20%;  
+        align-items: center;
+        img{}
+        .greeting-windows{
+            width: 400px;
+            height: 100px;
+            background-color: aliceblue;
+        }
+    }
+    .projects_owned{
+        width: 100%;
+        height: 60%;
+        table{
+            font-size: 28px;
+        }
+    }
+    .prompt-box{
+        width: 100%;
+        height: 20%;
+        justify-content: flex-end;
+        margin-left: 200px;
+        .prompt-windows{
+            width: 400px;
+            height: 100px;
+            background-color: aliceblue;
+        }
+    }
+}
+.rightSide{
+    padding-top: 50px;
+    @extend .leftSide;
+    .personal-inform{
+        width: 100%;
+        max-width: 656px;
+        max-height: 338px;
+        height: 50%;
+        background: linear-gradient(315deg,#92C6CA,transparent 150%);
+        opacity: 0.9;
+        border-radius: 20px;
+        box-shadow: 17px 16px 17px -10px rgba(0,0,0,1);;
+        margin: auto;
+        padding: 20px;
+        font-size: 24px;
+        line-height: 36px;
+        .personal-photo{
+            width: 204px;
+            height: 204px;
+            background-color: aliceblue;
+            border-radius: 100%;
+            background-image: url("https://s.yimg.com/uu/api/res/1.2/luKvlUy8pZ9gTU0SS2pXbg--~B/aD02MDQ7dz05NjA7YXBwaWQ9eXRhY2h5b24-/https://o.aolcdn.com/images/dar/5845cadfecd996e0372f/5d178cb92a30bc72bbc71c33e3605223945a5fa7/aHR0cDovL28uYW9sY2RuLmNvbS9oc3Mvc3RvcmFnZS9taWRhcy8yMGI5ZmMzMmNiOWRmYTJlMGMzYmZmNzA2NzZlNzJmNC8yMDI2MjQxMjEvd2FsbHBhcGVyLWZvci1mYWNlYm9vay1wcm9maWxlLXBob3RvLmpwZw==");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        
+    }
+    .pie-chart{
+        padding-top: 50px;
+        h1{
+            text-align: center;
+        }   
+    }
+}

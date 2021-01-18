@@ -1,0 +1,29 @@
+.point-section{
+    width: 100%;
+    padding-top: 200px;
+    padding-left: 200px;
+    .point-box{
+        width: 258px;
+        height: 290px;
+        background-color: #92C6CA;
+        border-radius: 30px;
+        transform: rotate(-10deg);
+        font-size: 48px;
+        text-align: center;
+        box-shadow: 10px 10px 5px 5px #587679;
+        padding-top: 40px;
+        
+    }
+    .diary-box{
+        width: 171px;
+        height: 194px;
+        background-color: #964F44;
+        border-radius: 30px;
+        transform: rotate(10deg);
+        font-size: 36px;
+        text-align: center;
+        color: white;
+        box-shadow: 10px 10px 5px 5px #693c36;
+        padding-top: 40px;
+    }
+}

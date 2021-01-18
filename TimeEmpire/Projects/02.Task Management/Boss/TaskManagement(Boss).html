@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskManagement(Boss)</title>
+    <link rel="stylesheet" href="/TimeEmpire/Projects/00.Template/css/template.css">
+    <link rel="stylesheet" href="/TimeEmpire/Projects/02.Task Management/Boss/css/TaskManagement(Boss).css">
+    <!-- DateTable -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+</head>
+<body class="d-flex">
+    <nav>
+        <div class="sideNav">
+            <div class="logo m-a">
+                <img src="/TimeEmpire/Projects/99.img/系統wireframe工作區2021-01-14-29.png" alt="">
+            </div>
+            <div class="main-btn m-a">TimeEmpire儀表板</div>
+            <div class="btn-group d-flex m-a">
+                <div class="btn">任務<br>管理</div>
+                <div class="btn">專案<br>管理</div>
+            </div>
+            <div class="btn-group d-flex m-a">
+                <div class="btn">點數<br>歷程</div>
+                <div class="btn">工作<br>日誌</div>
+            </div>
+            <div class="notice-window m-a d-flex">
+                <div class="notice-part d-flex">
+                    <img src="/TimeEmpire/Projects/99.img/系統wireframe工作區2021-01-14-30.png" width="140px">
+                    <div class="notice"></div>
+                </div>
+                <div class="logout-btn m-a">登出</div>
+            </div>
+            
+
+        </div>
+    </nav>
+    <main>  
+        <h2 class="align-middle">任務管理</h2>
+        <table id="myTable" class="table-striped table-bordered" style="width:90%">
+            <thead>
+                <tr>
+                    <th>任務執行者</th>
+                    <th>任務名稱</th>
+                    <th>任務類型</th>
+                    <th>專案名稱</th>
+                    <th>實際總工時</th>
+                    <th>實際核發點數</th>
+                    <th>點數核發</th>
+                </tr>
+            </thead>
+            <thead>
+                <tr>
+                    <td>楊凱開</td>
+                    <td>接洽業主</td>
+                    <td>設計</td>
+                    <td>哇哈哈</td>
+                    <td>8</td>
+                    <td>5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>尹壯壯</td>
+                    <td>前端三個頁面</td>
+                    <td>程式</td>
+                    <td>哇哈哈</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td></td>
+                </tr>
+            </thead>
+        </table>
+        <div class="prompt-box d-flex">
+            <div class="prompt-windows"></div>
+            <img src="/TimeEmpire/Projects/99.img/系統wireframe工作區2021-01-15-30.png" alt="">
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<!-- dataTable js -->
+
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.js"></script>
+
+    <script>
+        $(document).ready( function () {
+            $('#myTable').DataTable({
+                "paging":   false,
+                "info":     false,
+                "searching":false,
+            });
+            
+        } );
+    </script>
+</body>
+</html>
