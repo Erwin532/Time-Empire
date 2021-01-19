@@ -8,43 +8,63 @@ body{
     box-sizing: border-box;
     list-style: none;
 }
-.root {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-  }
-  .wave-wrapper {
-    &:nth-child(1) {
-      width: 100%;
-      height: 50vh;
-      position: absolute;
-      top: 0;
-      & .wave {
-        transform: rotate(180deg);
-      }
-    }
-    &:nth-child(2) {
-      width: 100%;
-      height: 50vh;
-      position: absolute;
-      bottom: 0;
-    }
-  }
+
+::selection{background-color: salmon; color: white;}
+.parallax > use{
+  animation:move-forever 12s linear infinite;
+  &:nth-child(1){animation-delay:-2s;}
+  &:nth-child(2){animation-delay:-2s; animation-duration:5s}
+  &:nth-child(3){animation-delay:-4s; animation-duration:3s}
+}
+
+@keyframes move-forever{
+  0%{transform: translate(-90px , 0%)}
+  100%{transform: translate(85px , 0%)} 
+}
+
+
+
+.editorial {
+  display: block;
+  width: 100%;
+  height: 10em;
+  max-height: 30vh;
+  margin: 0;
+}
+
+nav{
+  background-color: #ebe5e5;
+  margin: 0;max-height: 100vh; overflow:hidden;
+  padding: 9em 0 0 0;
+}
+
+/*prevent many large-by-comparison ripples by shrinking the height*/
+@media (max-width:50em){
+  .content h1{font-size: 12vmax}
+  .editorial{height:17vw;}
+}
+
+h1{outline:none}
+
+body{background-color:rgb(255, 255, 255)}
+
 main{
     .container{
         .banner{
             width: 100%;
             height: 100vh;
             background: linear-gradient(27deg,rgb(203, 218, 218) 50%,transparent 50%)center center/100% 100%,
-           #015871 right center / auto 100%;
+           #2256a5 right center / auto 100%;
             position: relative;
-            display: flex;  
+            display: flex; 
+             
             .circle{
-                width: 600px;
-                height: 600px;
-                background-image: url("https://pic36.photophoto.cn/20150815/1190119752922990_b.jpg") ;
+                width: 800px;
+                height: 800px;
+                background-image: url("/TimeEmpire/index/img/Earyh-all.png") ;
                 background-position: center;
                 background-size: contain;
+                background-repeat: no-repeat;
                 margin: auto;
                 align-items: center;
                 border-radius: 100%;
@@ -54,7 +74,6 @@ main{
                 animation-direction: alternate-reverse;
                 z-index: 10;
             }
-           
         }
     }
 }
@@ -88,6 +107,7 @@ main{
 }
 .container{
     background-color: rgb(203, 218, 218);
+    
     .swipper{
         background-color: rgb(203, 218, 218);
         width: 100%;
@@ -102,10 +122,6 @@ main{
             &:nth-child(3){
                 background-position:50% 75%;
             }
-            &:nth-child(1){
-                
-            }
-            
             width: 25%;
             height: auto;
             background: {
@@ -115,9 +131,7 @@ main{
                 position: 50% 75%;
               
             };
-            &:hover{
-                
-            }
+           
         }
         
     }
@@ -129,7 +143,7 @@ main{
             height: auto;
             display: flex;
             justify-content: space-around;
-
+            overflow: hidden;
             transform: rotate(10deg);
             .social{
                 width: 300px;
@@ -139,8 +153,8 @@ main{
                 background-image: url("https://i.pinimg.com/474x/6f/6f/55/6f6f5512c3bab473fc83adfb14a33aa8.jpg");
                 background-size: contain; 
                 overflow: hidden;
-                &:nth-child(1){
-                    background-position: right 70% bottom 45%;;
+                &:nth-child(n){
+                    transform: rotate(-15deg);
                 }         
             }  
 }

@@ -1,58 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Merienda');
-
-svg{
-  height: auto;
-  width: 100%;
-}
-body {
-  font-family: 'Merienda', cursive;
-  position: relative;
-}
-.container{
-    width: 100%;
-    height: auto;
-}
-.wavw2{
-    width: 200px;
-    height: 200px;
-    background-color: aqua;
-}
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/2.css">
 </head>
-<body> 
-    <div class="container">
-        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"><path id="wave" d="2"/></svg>
-    </div>
-    <div class="container wave2">
-        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" ><path id="wave" d="2"/></svg>
-    </div>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
-      <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/jquery.wavify.js"></script>
+<body>
+<nav>
+  <svg class="editorial"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 24 150 28"
+     preserveAspectRatio="none">
+ <defs>
+ <path id="gentle-wave"
+ d="M-160 44c30 0 
+    58-18 88-18s
+    58 18 88 18 
+    58-18 88-18 
+    58 18 88 18
+    v44h-352z" />
+  </defs>
+  <g class="parallax">
+   <use xlink:href="#gentle-wave" x="50" y="0" fill="#4579e2"/>
+   <use xlink:href="#gentle-wave" x="50" y="3" fill="#3461c1"/>
+   <use xlink:href="#gentle-wave" x="50" y="6" fill="#2d55aa"/>  
+  </g>
+</svg>
+</nav>
 
-      <script>
-$('#wave').wavify({
-  height: 80,
-  bones: 3,
-  amplitude: 50,
-  color: '#0bd',
-  speed: .35
-});
-$('#wave2').wavify({
-  height: 100,
-  bones: 2,
-  amplitude: 100,
-  color: '＃fff000',
-  speed: .35
-});
 
-      </script>
+
+
 </body>
 </html>

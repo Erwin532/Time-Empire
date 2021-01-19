@@ -38,7 +38,7 @@ nav{
     .btn-group{
         width: 291px;
         margin-top: 10px;
-        .btn{
+        .btnb{
             @include btn;
             
             &:nth-child(2n-1){

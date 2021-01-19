@@ -129,35 +129,100 @@ body {
   list-style: none;
 }
 
-.root {
-  width: 100%;
-  height: 100vh;
-  position: relative;
+::-moz-selection {
+  background-color: salmon;
+  color: white;
 }
 
-.wave-wrapper:nth-child(1) {
-  width: 100%;
-  height: 50vh;
-  position: absolute;
-  top: 0;
+::selection {
+  background-color: salmon;
+  color: white;
 }
 
-.wave-wrapper:nth-child(1) .wave {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+.parallax > use {
+  -webkit-animation: move-forever 12s linear infinite;
+          animation: move-forever 12s linear infinite;
 }
 
-.wave-wrapper:nth-child(2) {
+.parallax > use:nth-child(1) {
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+}
+
+.parallax > use:nth-child(2) {
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+.parallax > use:nth-child(3) {
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+@-webkit-keyframes move-forever {
+  0% {
+    -webkit-transform: translate(-90px, 0%);
+            transform: translate(-90px, 0%);
+  }
+  100% {
+    -webkit-transform: translate(85px, 0%);
+            transform: translate(85px, 0%);
+  }
+}
+
+@keyframes move-forever {
+  0% {
+    -webkit-transform: translate(-90px, 0%);
+            transform: translate(-90px, 0%);
+  }
+  100% {
+    -webkit-transform: translate(85px, 0%);
+            transform: translate(85px, 0%);
+  }
+}
+
+.editorial {
+  display: block;
   width: 100%;
-  height: 50vh;
-  position: absolute;
-  bottom: 0;
+  height: 10em;
+  max-height: 30vh;
+  margin: 0;
+}
+
+nav {
+  background-color: #ebe5e5;
+  margin: 0;
+  max-height: 100vh;
+  overflow: hidden;
+  padding: 9em 0 0 0;
+}
+
+/*prevent many large-by-comparison ripples by shrinking the height*/
+@media (max-width: 50em) {
+  .content h1 {
+    font-size: 12vmax;
+  }
+  .editorial {
+    height: 17vw;
+  }
+}
+
+h1 {
+  outline: none;
+}
+
+body {
+  background-color: white;
 }
 
 main .container .banner {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(27deg, #cbdada 50%, transparent 50%) center center/100% 100%, #015871 right center/auto 100%;
+  background: linear-gradient(27deg, #cbdada 50%, transparent 50%) center center/100% 100%, #2256a5 right center/auto 100%;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -165,11 +230,12 @@ main .container .banner {
 }
 
 main .container .banner .circle {
-  width: 600px;
-  height: 600px;
-  background-image: url("https://pic36.photophoto.cn/20150815/1190119752922990_b.jpg");
+  width: 800px;
+  height: 800px;
+  background-image: url("/TimeEmpire/index/img/Earyh-all.png");
   background-position: center;
   background-size: contain;
+  background-repeat: no-repeat;
   margin: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -260,6 +326,7 @@ main .container .banner .circle {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  overflow: hidden;
   -webkit-transform: rotate(10deg);
           transform: rotate(10deg);
 }
@@ -274,8 +341,9 @@ main .container .banner .circle {
   overflow: hidden;
 }
 
-.container-circle .social:nth-child(1) {
-  background-position: right 70% bottom 45%;
+.container-circle .social:nth-child(n) {
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
 }
 
 .start_use {
