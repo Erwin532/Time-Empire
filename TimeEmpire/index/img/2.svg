@@ -1,28 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-
-	<style>
-		.all:hover{
-			opacity: 0;
-		}
-		.bl:hover{
-			opacity: 0;
-		}
-		.ye:hover{
-			opacity: 0;
-		}
-		.red:hover{
-			opacity: 0;
-		}
-
-	</style>
-</head>
-<body>
-	
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
@@ -33,7 +9,7 @@
 	.st3{fill:#32FF7F;}
 	.st4{fill:#060009;stroke:#000000;stroke-miterlimit:10;}
 </style>
-<g id="all" class="all">
+<g id="all">
 	<g>
 		<g>
 			<rect x="361.5" y="67.5" class="st0" width="1213" height="897"/>
@@ -55,16 +31,13 @@
 		</g>
 	</g>
 </g>
-<g id="bl" class="bl">
+<g id="bl">
 	<rect x="361" y="67" class="st4" width="585.79" height="498.21"/>
 </g>
-<g id="ye" class="ye">
+<g id="ye">
 	<rect x="377.82" y="589.54" class="st4" width="1180.36" height="357.14"/>
 </g>
-<g id="red" class="red">
+<g id="red">
 	<rect x="968" y="94" class="st4" width="576.71" height="471.21"/>
 </g>
 </svg>
-
-</body>
-</html>
