@@ -141,8 +141,8 @@ nav {
           align-items: flex-end;
   -webkit-filter: url(#goo);
           filter: url(#goo);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f07109));
-  background-image: linear-gradient(to bottom, #ffffff 0%, #f07109 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, #678098), to(#678098));
+  background-image: linear-gradient(to bottom, #678098 100%, #678098 100%);
 }
 
 nav .goo-only {
@@ -152,18 +152,8 @@ nav .goo-only {
 
 nav img {
   position: absolute;
-  top: 10%;
-  left: 0;
-  right: 0;
-  font-size: 60px;
-  letter-spacing: 15px;
-  text-align: center;
-  -webkit-transform: transform(-50%, 0);
-          transform: transform(-50%, 0);
-  line-height: 1;
-  margin: 0;
-  font-family: 'Bungee', cursive;
-  color: #ffffff;
+  top: 0;
+  right: 30%;
 }
 
 .container {
@@ -190,1201 +180,1201 @@ nav img {
 }
 
 .wave:nth-child(1) {
-  background: #007dc9;
+  background: #354d6e;
   -webkit-animation-delay: 10ms;
           animation-delay: 10ms;
 }
 
 .wave:nth-child(2) {
-  background: #007dca;
+  background: #354d6f;
   -webkit-animation-delay: 20ms;
           animation-delay: 20ms;
 }
 
 .wave:nth-child(3) {
-  background: #007dcb;
+  background: #354d70;
   -webkit-animation-delay: 30ms;
           animation-delay: 30ms;
 }
 
 .wave:nth-child(4) {
-  background: #007dcc;
+  background: #354d71;
   -webkit-animation-delay: 40ms;
           animation-delay: 40ms;
 }
 
 .wave:nth-child(5) {
-  background: #007dcd;
+  background: #354d72;
   -webkit-animation-delay: 50ms;
           animation-delay: 50ms;
 }
 
 .wave:nth-child(6) {
-  background: #007dce;
+  background: #354d73;
   -webkit-animation-delay: 60ms;
           animation-delay: 60ms;
 }
 
 .wave:nth-child(7) {
-  background: #007dcf;
+  background: #354d74;
   -webkit-animation-delay: 70ms;
           animation-delay: 70ms;
 }
 
 .wave:nth-child(8) {
-  background: #007dd0;
+  background: #354d75;
   -webkit-animation-delay: 80ms;
           animation-delay: 80ms;
 }
 
 .wave:nth-child(9) {
-  background: #007dd1;
+  background: #354d76;
   -webkit-animation-delay: 90ms;
           animation-delay: 90ms;
 }
 
 .wave:nth-child(10) {
-  background: #007dd2;
+  background: #354d77;
   -webkit-animation-delay: 100ms;
           animation-delay: 100ms;
 }
 
 .wave:nth-child(11) {
-  background: #007dd3;
+  background: #354d78;
   -webkit-animation-delay: 110ms;
           animation-delay: 110ms;
 }
 
 .wave:nth-child(12) {
-  background: #007dd4;
+  background: #354d79;
   -webkit-animation-delay: 120ms;
           animation-delay: 120ms;
 }
 
 .wave:nth-child(13) {
-  background: #007dd5;
+  background: #354d7a;
   -webkit-animation-delay: 130ms;
           animation-delay: 130ms;
 }
 
 .wave:nth-child(14) {
-  background: #007dd6;
+  background: #354d7b;
   -webkit-animation-delay: 140ms;
           animation-delay: 140ms;
 }
 
 .wave:nth-child(15) {
-  background: #007dd7;
+  background: #354d7c;
   -webkit-animation-delay: 150ms;
           animation-delay: 150ms;
 }
 
 .wave:nth-child(16) {
-  background: #007dd8;
+  background: #354d7d;
   -webkit-animation-delay: 160ms;
           animation-delay: 160ms;
 }
 
 .wave:nth-child(17) {
-  background: #007dd9;
+  background: #354d7e;
   -webkit-animation-delay: 170ms;
           animation-delay: 170ms;
 }
 
 .wave:nth-child(18) {
-  background: #007dda;
+  background: #354d7f;
   -webkit-animation-delay: 180ms;
           animation-delay: 180ms;
 }
 
 .wave:nth-child(19) {
-  background: #007ddb;
+  background: #354d80;
   -webkit-animation-delay: 190ms;
           animation-delay: 190ms;
 }
 
 .wave:nth-child(20) {
-  background: #007ddc;
+  background: #354d81;
   -webkit-animation-delay: 200ms;
           animation-delay: 200ms;
 }
 
 .wave:nth-child(21) {
-  background: #007ddd;
+  background: #354d82;
   -webkit-animation-delay: 210ms;
           animation-delay: 210ms;
 }
 
 .wave:nth-child(22) {
-  background: #007dde;
+  background: #354d83;
   -webkit-animation-delay: 220ms;
           animation-delay: 220ms;
 }
 
 .wave:nth-child(23) {
-  background: #007ddf;
+  background: #354d84;
   -webkit-animation-delay: 230ms;
           animation-delay: 230ms;
 }
 
 .wave:nth-child(24) {
-  background: #007de0;
+  background: #354d85;
   -webkit-animation-delay: 240ms;
           animation-delay: 240ms;
 }
 
 .wave:nth-child(25) {
-  background: #007de1;
+  background: #354d86;
   -webkit-animation-delay: 250ms;
           animation-delay: 250ms;
 }
 
 .wave:nth-child(26) {
-  background: #007de2;
+  background: #354d87;
   -webkit-animation-delay: 260ms;
           animation-delay: 260ms;
 }
 
 .wave:nth-child(27) {
-  background: #007de3;
+  background: #354d88;
   -webkit-animation-delay: 270ms;
           animation-delay: 270ms;
 }
 
 .wave:nth-child(28) {
-  background: #007de4;
+  background: #354d89;
   -webkit-animation-delay: 280ms;
           animation-delay: 280ms;
 }
 
 .wave:nth-child(29) {
-  background: #007de5;
+  background: #354d8a;
   -webkit-animation-delay: 290ms;
           animation-delay: 290ms;
 }
 
 .wave:nth-child(30) {
-  background: #007de6;
+  background: #354d8b;
   -webkit-animation-delay: 300ms;
           animation-delay: 300ms;
 }
 
 .wave:nth-child(31) {
-  background: #007de7;
+  background: #354d8c;
   -webkit-animation-delay: 310ms;
           animation-delay: 310ms;
 }
 
 .wave:nth-child(32) {
-  background: #007de8;
+  background: #354d8d;
   -webkit-animation-delay: 320ms;
           animation-delay: 320ms;
 }
 
 .wave:nth-child(33) {
-  background: #007de9;
+  background: #354d8e;
   -webkit-animation-delay: 330ms;
           animation-delay: 330ms;
 }
 
 .wave:nth-child(34) {
-  background: #007dea;
+  background: #354d8f;
   -webkit-animation-delay: 340ms;
           animation-delay: 340ms;
 }
 
 .wave:nth-child(35) {
-  background: #007deb;
+  background: #354d90;
   -webkit-animation-delay: 350ms;
           animation-delay: 350ms;
 }
 
 .wave:nth-child(36) {
-  background: #007dec;
+  background: #354d91;
   -webkit-animation-delay: 360ms;
           animation-delay: 360ms;
 }
 
 .wave:nth-child(37) {
-  background: #007ded;
+  background: #354d92;
   -webkit-animation-delay: 370ms;
           animation-delay: 370ms;
 }
 
 .wave:nth-child(38) {
-  background: #007dee;
+  background: #354d93;
   -webkit-animation-delay: 380ms;
           animation-delay: 380ms;
 }
 
 .wave:nth-child(39) {
-  background: #007def;
+  background: #354d94;
   -webkit-animation-delay: 390ms;
           animation-delay: 390ms;
 }
 
 .wave:nth-child(40) {
-  background: #007df0;
+  background: #354d95;
   -webkit-animation-delay: 400ms;
           animation-delay: 400ms;
 }
 
 .wave:nth-child(41) {
-  background: #007df1;
+  background: #354d96;
   -webkit-animation-delay: 410ms;
           animation-delay: 410ms;
 }
 
 .wave:nth-child(42) {
-  background: #007df2;
+  background: #354d97;
   -webkit-animation-delay: 420ms;
           animation-delay: 420ms;
 }
 
 .wave:nth-child(43) {
-  background: #007df3;
+  background: #354d98;
   -webkit-animation-delay: 430ms;
           animation-delay: 430ms;
 }
 
 .wave:nth-child(44) {
-  background: #007df4;
+  background: #354d99;
   -webkit-animation-delay: 440ms;
           animation-delay: 440ms;
 }
 
 .wave:nth-child(45) {
-  background: #007df5;
+  background: #354d9a;
   -webkit-animation-delay: 450ms;
           animation-delay: 450ms;
 }
 
 .wave:nth-child(46) {
-  background: #007df6;
+  background: #354d9b;
   -webkit-animation-delay: 460ms;
           animation-delay: 460ms;
 }
 
 .wave:nth-child(47) {
-  background: #007df7;
+  background: #354d9c;
   -webkit-animation-delay: 470ms;
           animation-delay: 470ms;
 }
 
 .wave:nth-child(48) {
-  background: #007df8;
+  background: #354d9d;
   -webkit-animation-delay: 480ms;
           animation-delay: 480ms;
 }
 
 .wave:nth-child(49) {
-  background: #007df9;
+  background: #354d9e;
   -webkit-animation-delay: 490ms;
           animation-delay: 490ms;
 }
 
 .wave:nth-child(50) {
-  background: #007dfa;
+  background: #354d9f;
   -webkit-animation-delay: 500ms;
           animation-delay: 500ms;
 }
 
 .wave:nth-child(51) {
-  background: #007dfb;
+  background: #354da0;
   -webkit-animation-delay: 510ms;
           animation-delay: 510ms;
 }
 
 .wave:nth-child(52) {
-  background: #007dfc;
+  background: #354da1;
   -webkit-animation-delay: 520ms;
           animation-delay: 520ms;
 }
 
 .wave:nth-child(53) {
-  background: #007dfd;
+  background: #354da2;
   -webkit-animation-delay: 530ms;
           animation-delay: 530ms;
 }
 
 .wave:nth-child(54) {
-  background: #007dfe;
+  background: #354da3;
   -webkit-animation-delay: 540ms;
           animation-delay: 540ms;
 }
 
 .wave:nth-child(55) {
-  background: #007dff;
+  background: #354da4;
   -webkit-animation-delay: 550ms;
           animation-delay: 550ms;
 }
 
 .wave:nth-child(56) {
-  background: #007dff;
+  background: #354da5;
   -webkit-animation-delay: 560ms;
           animation-delay: 560ms;
 }
 
 .wave:nth-child(57) {
-  background: #007dff;
+  background: #354da6;
   -webkit-animation-delay: 570ms;
           animation-delay: 570ms;
 }
 
 .wave:nth-child(58) {
-  background: #007dff;
+  background: #354da7;
   -webkit-animation-delay: 580ms;
           animation-delay: 580ms;
 }
 
 .wave:nth-child(59) {
-  background: #007dff;
+  background: #354da8;
   -webkit-animation-delay: 590ms;
           animation-delay: 590ms;
 }
 
 .wave:nth-child(60) {
-  background: #007dff;
+  background: #354da9;
   -webkit-animation-delay: 600ms;
           animation-delay: 600ms;
 }
 
 .wave:nth-child(61) {
-  background: #007dff;
+  background: #354daa;
   -webkit-animation-delay: 610ms;
           animation-delay: 610ms;
 }
 
 .wave:nth-child(62) {
-  background: #007dff;
+  background: #354dab;
   -webkit-animation-delay: 620ms;
           animation-delay: 620ms;
 }
 
 .wave:nth-child(63) {
-  background: #007dff;
+  background: #354dac;
   -webkit-animation-delay: 630ms;
           animation-delay: 630ms;
 }
 
 .wave:nth-child(64) {
-  background: #007dff;
+  background: #354dad;
   -webkit-animation-delay: 640ms;
           animation-delay: 640ms;
 }
 
 .wave:nth-child(65) {
-  background: #007dff;
+  background: #354dae;
   -webkit-animation-delay: 650ms;
           animation-delay: 650ms;
 }
 
 .wave:nth-child(66) {
-  background: #007dff;
+  background: #354daf;
   -webkit-animation-delay: 660ms;
           animation-delay: 660ms;
 }
 
 .wave:nth-child(67) {
-  background: #007dff;
+  background: #354db0;
   -webkit-animation-delay: 670ms;
           animation-delay: 670ms;
 }
 
 .wave:nth-child(68) {
-  background: #007dff;
+  background: #354db1;
   -webkit-animation-delay: 680ms;
           animation-delay: 680ms;
 }
 
 .wave:nth-child(69) {
-  background: #007dff;
+  background: #354db2;
   -webkit-animation-delay: 690ms;
           animation-delay: 690ms;
 }
 
 .wave:nth-child(70) {
-  background: #007dff;
+  background: #354db3;
   -webkit-animation-delay: 700ms;
           animation-delay: 700ms;
 }
 
 .wave:nth-child(71) {
-  background: #007dff;
+  background: #354db4;
   -webkit-animation-delay: 710ms;
           animation-delay: 710ms;
 }
 
 .wave:nth-child(72) {
-  background: #007dff;
+  background: #354db5;
   -webkit-animation-delay: 720ms;
           animation-delay: 720ms;
 }
 
 .wave:nth-child(73) {
-  background: #007dff;
+  background: #354db6;
   -webkit-animation-delay: 730ms;
           animation-delay: 730ms;
 }
 
 .wave:nth-child(74) {
-  background: #007dff;
+  background: #354db7;
   -webkit-animation-delay: 740ms;
           animation-delay: 740ms;
 }
 
 .wave:nth-child(75) {
-  background: #007dff;
+  background: #354db8;
   -webkit-animation-delay: 750ms;
           animation-delay: 750ms;
 }
 
 .wave:nth-child(76) {
-  background: #007dff;
+  background: #354db9;
   -webkit-animation-delay: 760ms;
           animation-delay: 760ms;
 }
 
 .wave:nth-child(77) {
-  background: #007dff;
+  background: #354dba;
   -webkit-animation-delay: 770ms;
           animation-delay: 770ms;
 }
 
 .wave:nth-child(78) {
-  background: #007dff;
+  background: #354dbb;
   -webkit-animation-delay: 780ms;
           animation-delay: 780ms;
 }
 
 .wave:nth-child(79) {
-  background: #007dff;
+  background: #354dbc;
   -webkit-animation-delay: 790ms;
           animation-delay: 790ms;
 }
 
 .wave:nth-child(80) {
-  background: #007dff;
+  background: #354dbd;
   -webkit-animation-delay: 800ms;
           animation-delay: 800ms;
 }
 
 .wave:nth-child(81) {
-  background: #007dff;
+  background: #354dbe;
   -webkit-animation-delay: 810ms;
           animation-delay: 810ms;
 }
 
 .wave:nth-child(82) {
-  background: #007dff;
+  background: #354dbf;
   -webkit-animation-delay: 820ms;
           animation-delay: 820ms;
 }
 
 .wave:nth-child(83) {
-  background: #007dff;
+  background: #354dc0;
   -webkit-animation-delay: 830ms;
           animation-delay: 830ms;
 }
 
 .wave:nth-child(84) {
-  background: #007dff;
+  background: #354dc1;
   -webkit-animation-delay: 840ms;
           animation-delay: 840ms;
 }
 
 .wave:nth-child(85) {
-  background: #007dff;
+  background: #354dc2;
   -webkit-animation-delay: 850ms;
           animation-delay: 850ms;
 }
 
 .wave:nth-child(86) {
-  background: #007dff;
+  background: #354dc3;
   -webkit-animation-delay: 860ms;
           animation-delay: 860ms;
 }
 
 .wave:nth-child(87) {
-  background: #007dff;
+  background: #354dc4;
   -webkit-animation-delay: 870ms;
           animation-delay: 870ms;
 }
 
 .wave:nth-child(88) {
-  background: #007dff;
+  background: #354dc5;
   -webkit-animation-delay: 880ms;
           animation-delay: 880ms;
 }
 
 .wave:nth-child(89) {
-  background: #007dff;
+  background: #354dc6;
   -webkit-animation-delay: 890ms;
           animation-delay: 890ms;
 }
 
 .wave:nth-child(90) {
-  background: #007dff;
+  background: #354dc7;
   -webkit-animation-delay: 900ms;
           animation-delay: 900ms;
 }
 
 .wave:nth-child(91) {
-  background: #007dff;
+  background: #354dc8;
   -webkit-animation-delay: 910ms;
           animation-delay: 910ms;
 }
 
 .wave:nth-child(92) {
-  background: #007dff;
+  background: #354dc9;
   -webkit-animation-delay: 920ms;
           animation-delay: 920ms;
 }
 
 .wave:nth-child(93) {
-  background: #007dff;
+  background: #354dca;
   -webkit-animation-delay: 930ms;
           animation-delay: 930ms;
 }
 
 .wave:nth-child(94) {
-  background: #007dff;
+  background: #354dcb;
   -webkit-animation-delay: 940ms;
           animation-delay: 940ms;
 }
 
 .wave:nth-child(95) {
-  background: #007dff;
+  background: #354dcc;
   -webkit-animation-delay: 950ms;
           animation-delay: 950ms;
 }
 
 .wave:nth-child(96) {
-  background: #007dff;
+  background: #354dcd;
   -webkit-animation-delay: 960ms;
           animation-delay: 960ms;
 }
 
 .wave:nth-child(97) {
-  background: #007dff;
+  background: #354dce;
   -webkit-animation-delay: 970ms;
           animation-delay: 970ms;
 }
 
 .wave:nth-child(98) {
-  background: #007dff;
+  background: #354dcf;
   -webkit-animation-delay: 980ms;
           animation-delay: 980ms;
 }
 
 .wave:nth-child(99) {
-  background: #007dff;
+  background: #354dd0;
   -webkit-animation-delay: 990ms;
           animation-delay: 990ms;
 }
 
 .wave:nth-child(100) {
-  background: #007dff;
+  background: #354dd1;
   -webkit-animation-delay: 1000ms;
           animation-delay: 1000ms;
 }
 
 .wave:nth-child(101) {
-  background: #007dff;
+  background: #354dd2;
   -webkit-animation-delay: 1010ms;
           animation-delay: 1010ms;
 }
 
 .wave:nth-child(102) {
-  background: #007dff;
+  background: #354dd3;
   -webkit-animation-delay: 1020ms;
           animation-delay: 1020ms;
 }
 
 .wave:nth-child(103) {
-  background: #007dff;
+  background: #354dd4;
   -webkit-animation-delay: 1030ms;
           animation-delay: 1030ms;
 }
 
 .wave:nth-child(104) {
-  background: #007dff;
+  background: #354dd5;
   -webkit-animation-delay: 1040ms;
           animation-delay: 1040ms;
 }
 
 .wave:nth-child(105) {
-  background: #007dff;
+  background: #354dd6;
   -webkit-animation-delay: 1050ms;
           animation-delay: 1050ms;
 }
 
 .wave:nth-child(106) {
-  background: #007dff;
+  background: #354dd7;
   -webkit-animation-delay: 1060ms;
           animation-delay: 1060ms;
 }
 
 .wave:nth-child(107) {
-  background: #007dff;
+  background: #354dd8;
   -webkit-animation-delay: 1070ms;
           animation-delay: 1070ms;
 }
 
 .wave:nth-child(108) {
-  background: #007dff;
+  background: #354dd9;
   -webkit-animation-delay: 1080ms;
           animation-delay: 1080ms;
 }
 
 .wave:nth-child(109) {
-  background: #007dff;
+  background: #354dda;
   -webkit-animation-delay: 1090ms;
           animation-delay: 1090ms;
 }
 
 .wave:nth-child(110) {
-  background: #007dff;
+  background: #354ddb;
   -webkit-animation-delay: 1100ms;
           animation-delay: 1100ms;
 }
 
 .wave:nth-child(111) {
-  background: #007dff;
+  background: #354ddc;
   -webkit-animation-delay: 1110ms;
           animation-delay: 1110ms;
 }
 
 .wave:nth-child(112) {
-  background: #007dff;
+  background: #354ddd;
   -webkit-animation-delay: 1120ms;
           animation-delay: 1120ms;
 }
 
 .wave:nth-child(113) {
-  background: #007dff;
+  background: #354dde;
   -webkit-animation-delay: 1130ms;
           animation-delay: 1130ms;
 }
 
 .wave:nth-child(114) {
-  background: #007dff;
+  background: #354ddf;
   -webkit-animation-delay: 1140ms;
           animation-delay: 1140ms;
 }
 
 .wave:nth-child(115) {
-  background: #007dff;
+  background: #354de0;
   -webkit-animation-delay: 1150ms;
           animation-delay: 1150ms;
 }
 
 .wave:nth-child(116) {
-  background: #007dff;
+  background: #354de1;
   -webkit-animation-delay: 1160ms;
           animation-delay: 1160ms;
 }
 
 .wave:nth-child(117) {
-  background: #007dff;
+  background: #354de2;
   -webkit-animation-delay: 1170ms;
           animation-delay: 1170ms;
 }
 
 .wave:nth-child(118) {
-  background: #007dff;
+  background: #354de3;
   -webkit-animation-delay: 1180ms;
           animation-delay: 1180ms;
 }
 
 .wave:nth-child(119) {
-  background: #007dff;
+  background: #354de4;
   -webkit-animation-delay: 1190ms;
           animation-delay: 1190ms;
 }
 
 .wave:nth-child(120) {
-  background: #007dff;
+  background: #354de5;
   -webkit-animation-delay: 1200ms;
           animation-delay: 1200ms;
 }
 
 .wave:nth-child(121) {
-  background: #007dff;
+  background: #354de6;
   -webkit-animation-delay: 1210ms;
           animation-delay: 1210ms;
 }
 
 .wave:nth-child(122) {
-  background: #007dff;
+  background: #354de7;
   -webkit-animation-delay: 1220ms;
           animation-delay: 1220ms;
 }
 
 .wave:nth-child(123) {
-  background: #007dff;
+  background: #354de8;
   -webkit-animation-delay: 1230ms;
           animation-delay: 1230ms;
 }
 
 .wave:nth-child(124) {
-  background: #007dff;
+  background: #354de9;
   -webkit-animation-delay: 1240ms;
           animation-delay: 1240ms;
 }
 
 .wave:nth-child(125) {
-  background: #007dff;
+  background: #354dea;
   -webkit-animation-delay: 1250ms;
           animation-delay: 1250ms;
 }
 
 .wave:nth-child(126) {
-  background: #007dff;
+  background: #354deb;
   -webkit-animation-delay: 1260ms;
           animation-delay: 1260ms;
 }
 
 .wave:nth-child(127) {
-  background: #007dff;
+  background: #354dec;
   -webkit-animation-delay: 1270ms;
           animation-delay: 1270ms;
 }
 
 .wave:nth-child(128) {
-  background: #007dff;
+  background: #354ded;
   -webkit-animation-delay: 1280ms;
           animation-delay: 1280ms;
 }
 
 .wave:nth-child(129) {
-  background: #007dff;
+  background: #354dee;
   -webkit-animation-delay: 1290ms;
           animation-delay: 1290ms;
 }
 
 .wave:nth-child(130) {
-  background: #007dff;
+  background: #354def;
   -webkit-animation-delay: 1300ms;
           animation-delay: 1300ms;
 }
 
 .wave:nth-child(131) {
-  background: #007dff;
+  background: #354df0;
   -webkit-animation-delay: 1310ms;
           animation-delay: 1310ms;
 }
 
 .wave:nth-child(132) {
-  background: #007dff;
+  background: #354df1;
   -webkit-animation-delay: 1320ms;
           animation-delay: 1320ms;
 }
 
 .wave:nth-child(133) {
-  background: #007dff;
+  background: #354df2;
   -webkit-animation-delay: 1330ms;
           animation-delay: 1330ms;
 }
 
 .wave:nth-child(134) {
-  background: #007dff;
+  background: #354df3;
   -webkit-animation-delay: 1340ms;
           animation-delay: 1340ms;
 }
 
 .wave:nth-child(135) {
-  background: #007dff;
+  background: #354df4;
   -webkit-animation-delay: 1350ms;
           animation-delay: 1350ms;
 }
 
 .wave:nth-child(136) {
-  background: #007dff;
+  background: #354df5;
   -webkit-animation-delay: 1360ms;
           animation-delay: 1360ms;
 }
 
 .wave:nth-child(137) {
-  background: #007dff;
+  background: #354df6;
   -webkit-animation-delay: 1370ms;
           animation-delay: 1370ms;
 }
 
 .wave:nth-child(138) {
-  background: #007dff;
+  background: #354df7;
   -webkit-animation-delay: 1380ms;
           animation-delay: 1380ms;
 }
 
 .wave:nth-child(139) {
-  background: #007dff;
+  background: #354df8;
   -webkit-animation-delay: 1390ms;
           animation-delay: 1390ms;
 }
 
 .wave:nth-child(140) {
-  background: #007dff;
+  background: #354df9;
   -webkit-animation-delay: 1400ms;
           animation-delay: 1400ms;
 }
 
 .wave:nth-child(141) {
-  background: #007dff;
+  background: #354dfa;
   -webkit-animation-delay: 1410ms;
           animation-delay: 1410ms;
 }
 
 .wave:nth-child(142) {
-  background: #007dff;
+  background: #354dfb;
   -webkit-animation-delay: 1420ms;
           animation-delay: 1420ms;
 }
 
 .wave:nth-child(143) {
-  background: #007dff;
+  background: #354dfc;
   -webkit-animation-delay: 1430ms;
           animation-delay: 1430ms;
 }
 
 .wave:nth-child(144) {
-  background: #007dff;
+  background: #354dfd;
   -webkit-animation-delay: 1440ms;
           animation-delay: 1440ms;
 }
 
 .wave:nth-child(145) {
-  background: #007dff;
+  background: #354dfe;
   -webkit-animation-delay: 1450ms;
           animation-delay: 1450ms;
 }
 
 .wave:nth-child(146) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1460ms;
           animation-delay: 1460ms;
 }
 
 .wave:nth-child(147) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1470ms;
           animation-delay: 1470ms;
 }
 
 .wave:nth-child(148) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1480ms;
           animation-delay: 1480ms;
 }
 
 .wave:nth-child(149) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1490ms;
           animation-delay: 1490ms;
 }
 
 .wave:nth-child(150) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1500ms;
           animation-delay: 1500ms;
 }
 
 .wave:nth-child(151) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1510ms;
           animation-delay: 1510ms;
 }
 
 .wave:nth-child(152) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1520ms;
           animation-delay: 1520ms;
 }
 
 .wave:nth-child(153) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1530ms;
           animation-delay: 1530ms;
 }
 
 .wave:nth-child(154) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1540ms;
           animation-delay: 1540ms;
 }
 
 .wave:nth-child(155) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1550ms;
           animation-delay: 1550ms;
 }
 
 .wave:nth-child(156) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1560ms;
           animation-delay: 1560ms;
 }
 
 .wave:nth-child(157) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1570ms;
           animation-delay: 1570ms;
 }
 
 .wave:nth-child(158) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1580ms;
           animation-delay: 1580ms;
 }
 
 .wave:nth-child(159) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1590ms;
           animation-delay: 1590ms;
 }
 
 .wave:nth-child(160) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1600ms;
           animation-delay: 1600ms;
 }
 
 .wave:nth-child(161) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1610ms;
           animation-delay: 1610ms;
 }
 
 .wave:nth-child(162) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1620ms;
           animation-delay: 1620ms;
 }
 
 .wave:nth-child(163) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1630ms;
           animation-delay: 1630ms;
 }
 
 .wave:nth-child(164) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1640ms;
           animation-delay: 1640ms;
 }
 
 .wave:nth-child(165) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1650ms;
           animation-delay: 1650ms;
 }
 
 .wave:nth-child(166) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1660ms;
           animation-delay: 1660ms;
 }
 
 .wave:nth-child(167) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1670ms;
           animation-delay: 1670ms;
 }
 
 .wave:nth-child(168) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1680ms;
           animation-delay: 1680ms;
 }
 
 .wave:nth-child(169) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1690ms;
           animation-delay: 1690ms;
 }
 
 .wave:nth-child(170) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1700ms;
           animation-delay: 1700ms;
 }
 
 .wave:nth-child(171) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1710ms;
           animation-delay: 1710ms;
 }
 
 .wave:nth-child(172) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1720ms;
           animation-delay: 1720ms;
 }
 
 .wave:nth-child(173) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1730ms;
           animation-delay: 1730ms;
 }
 
 .wave:nth-child(174) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1740ms;
           animation-delay: 1740ms;
 }
 
 .wave:nth-child(175) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1750ms;
           animation-delay: 1750ms;
 }
 
 .wave:nth-child(176) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1760ms;
           animation-delay: 1760ms;
 }
 
 .wave:nth-child(177) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1770ms;
           animation-delay: 1770ms;
 }
 
 .wave:nth-child(178) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1780ms;
           animation-delay: 1780ms;
 }
 
 .wave:nth-child(179) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1790ms;
           animation-delay: 1790ms;
 }
 
 .wave:nth-child(180) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1800ms;
           animation-delay: 1800ms;
 }
 
 .wave:nth-child(181) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1810ms;
           animation-delay: 1810ms;
 }
 
 .wave:nth-child(182) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1820ms;
           animation-delay: 1820ms;
 }
 
 .wave:nth-child(183) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1830ms;
           animation-delay: 1830ms;
 }
 
 .wave:nth-child(184) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1840ms;
           animation-delay: 1840ms;
 }
 
 .wave:nth-child(185) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1850ms;
           animation-delay: 1850ms;
 }
 
 .wave:nth-child(186) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1860ms;
           animation-delay: 1860ms;
 }
 
 .wave:nth-child(187) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1870ms;
           animation-delay: 1870ms;
 }
 
 .wave:nth-child(188) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1880ms;
           animation-delay: 1880ms;
 }
 
 .wave:nth-child(189) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1890ms;
           animation-delay: 1890ms;
 }
 
 .wave:nth-child(190) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1900ms;
           animation-delay: 1900ms;
 }
 
 .wave:nth-child(191) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1910ms;
           animation-delay: 1910ms;
 }
 
 .wave:nth-child(192) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1920ms;
           animation-delay: 1920ms;
 }
 
 .wave:nth-child(193) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1930ms;
           animation-delay: 1930ms;
 }
 
 .wave:nth-child(194) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1940ms;
           animation-delay: 1940ms;
 }
 
 .wave:nth-child(195) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1950ms;
           animation-delay: 1950ms;
 }
 
 .wave:nth-child(196) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1960ms;
           animation-delay: 1960ms;
 }
 
 .wave:nth-child(197) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1970ms;
           animation-delay: 1970ms;
 }
 
 .wave:nth-child(198) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1980ms;
           animation-delay: 1980ms;
 }
 
 .wave:nth-child(199) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 1990ms;
           animation-delay: 1990ms;
 }
 
 .wave:nth-child(200) {
-  background: #007dff;
+  background: #354dff;
   -webkit-animation-delay: 2000ms;
           animation-delay: 2000ms;
 }
@@ -1409,7 +1399,7 @@ nav #img {
 main .container .banner {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(27deg, #cbdada 50%, transparent 50%) center center/100% 100%, deepskyblue right center/auto 100%;
+  background: linear-gradient(27deg, #678098 50%, transparent 50%) center center/100% 100%, #354d6d right center/auto 100%;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
