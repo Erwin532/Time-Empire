@@ -1,1 +1,27 @@
 $img:url("https://i.pinimg.com/564x/b9/9d/fb/b99dfba23c3b500aea1e0cb74a3d0a54.jpg");
+
+//電腦
+@mixin pc-width() {
+    @media all and (max-width: $pc-media) {
+                 @content;
+           }
+      }
+  //平板
+@mixin pad-width() {
+  @media all and (max-width:$pad-media) and (max-width: $pcs-media) {
+                  @content;
+            }
+  }
+  //小平板
+@mixin small-pad-width() {
+          @media all and (max-width: $phone-media) and (max-width:$pads-media) {
+                  @content;
+            }
+   }
+  //手機
+@mixin phone-width() {
+          @media all and (max-width: $phones-media) {
+                  @content;
+            }
+   }
+  

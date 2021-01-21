@@ -1,40 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<style>
-		.rightTower:hover{
-			opacity: 0;
-			transition: 0.8s;
-			
-		}
-		.midTower:hover{
-			opacity: 0;
-			transition: 0.8s;
-		}
-		.midWall:hover{
-			opacity: 0;transition: 0.8s;
-		}
-		.rightWall:hover{
-			opacity: 0;transition: 0.8s;
-		}
-		.leftTower:hover{
-			opacity: 0;transition: 0.8s;
-		}
-		.leftWall:hover{
-			opacity: 0;transition: 0.8s;
-		}
-		.all{
-			display: none;
-		}
-		
-		
-	</style>
-</head>
-<body>
-
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
@@ -189,7 +153,7 @@
 	.st147{fill:url(#SVGID_63_);}
 	.st148{fill:url(#SVGID_64_);}
 </style>
-<g id="colorful" class="color">
+<g id="colorful">
 	<g>
 		<g>
 			<g>
@@ -1669,7 +1633,7 @@
 			c11-5.8,16.1-73.3-11.4-63.2C907.7,385.5,907.6,385.5,907.5,385.5z"/>
 	</g>
 </g>
-<g id="g" class="rightTower">
+<g id="g">
 	<g>
 		<g>
 			<polygon class="st97" points="1166.7,446.5 1141.9,460.9 1116.9,446.5 1141.8,432 			"/>
@@ -2017,7 +1981,7 @@
 			c11-5.8,16.1-73.3-11.4-63.2C907.7,385.5,907.6,385.5,907.5,385.5z"/>
 	</g>
 </g>
-<g id="f" class="midTower">
+<g id="f">
 	<g>
 		<polygon class="st100" points="1010.7,357.4 1010.7,357.4 1010.9,291.7 952.5,325.6 951.8,564.6 992.1,541.3 992.6,367.9 		"/>
 		<g>
@@ -2115,7 +2079,7 @@
 			c11-5.8,16.1-73.3-11.4-63.2C907.7,385.5,907.6,385.5,907.5,385.5z"/>
 	</g>
 </g>
-<g id="e" class="midWall">
+<g id="e">
 	<g>
 		<g>
 			<g>
@@ -2231,7 +2195,7 @@
 			c11-5.8,16.1-73.3-11.4-63.2C907.7,385.5,907.6,385.5,907.5,385.5z"/>
 	</g>
 </g>
-<g id="d" class="rightWall">
+<g id="d">
 	<g>
 		<g>
 			<polygon class="st100" points="1075.1,530.7 1087.7,523.4 1087.5,575.7 1074.9,583 			"/>
@@ -2374,7 +2338,7 @@
 			c11-5.8,16.1-73.3-11.4-63.2C907.7,385.5,907.6,385.5,907.5,385.5z"/>
 	</g>
 </g>
-<g id="c" class="leftTower">
+<g id="c">
 	<g>
 		<g>
 			<polygon class="st100" points="778.5,539.4 778.4,576 784.4,572.5 789.4,575.4 832.8,550.1 832.9,544.5 837.5,541.8 837.6,505 
@@ -2725,7 +2689,7 @@
 			c11-5.8,16.1-73.3-11.4-63.2C907.7,385.5,907.6,385.5,907.5,385.5z"/>
 	</g>
 </g>
-<g id="b" class="leftWall">
+<g id="b">
 	<g>
 		<g>
 			<polygon class="st101" points="934.5,671.9 934.2,757.5 778.1,667.3 778.3,581.7 			"/>
@@ -3060,7 +3024,7 @@
 			c11-5.8,16.1-73.3-11.4-63.2C907.7,385.5,907.6,385.5,907.5,385.5z"/>
 	</g>
 </g>
-<g id="a" class="all">
+<g id="a">
 	<g class="st145">
 		<linearGradient id="SVGID_62_" gradientUnits="userSpaceOnUse" x1="793.3376" y1="183.8191" x2="792.9264" y2="202.119">
 			<stop  offset="0" style="stop-color:#B2DEE6"/>
@@ -3097,6 +3061,3 @@
 	</g>
 </g>
 </svg>
-
-</body>
-</html>
