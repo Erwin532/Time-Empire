@@ -528,8 +528,6 @@ main .container .banner .circle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -622,26 +620,44 @@ main .container .banner .circle {
 
 .start_use .container .btn_area .btn {
   width: 300px;
-  height: 100px;
-  background-color: #ADA299;
-  color: white;
-  border-radius: 30px;
-  line-height: 100px;
-  text-align: center;
+  height: 50px;
+  border-color: #ADA299;
+  border-radius: 0;
+  border: 2px solid;
+  border-radius: 0;
+  color: #ADA299;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
   font-size: 36px;
-  margin: 0 20px;
+  text-align: center;
   cursor: pointer;
 }
 
-.start_use .container .btn_area .btn:hover {
-  background-color: white;
-  color: #ADA299;
+.start_use .container .btn_area .btn:after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 0;
+  height: 100%;
+  background: #ADA299;
+  z-index: -1;
+  -webkit-transition: width 150ms ease-in-out;
+  transition: width 150ms ease-in-out;
 }
 
-@media screen and (max-width: 600px) {
-  .start_use .container .btn_area .btn {
-    margin-top: 20px;
-  }
+.start_use .container .btn_area .btn:hover {
+  color: #fff;
+}
+
+.start_use .container .btn_area .btn:hover:after {
+  width: 110%;
 }
 
 footer {
