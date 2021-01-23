@@ -3074,12 +3074,28 @@
     </g>
         </svg>
     </div>
-    <div class="chatBox"></div>
-    <div class="chatBox"></div>
-    <div class="chatBox"></div>
-    <div class="chatBox"></div>
-    <div class="chatBox"></div>
-    <div class="chatBox"></div>
+    <div class="chatBox"><a class="close" href="">x</a>
+        <p>商品展示 Product Demo
+        </p>
+    </div>
+    <div class="chatBox"><a class="close" href="">x</a>      
+        <p>市場差異化 Market Segmentation</p>
+    </div>
+    <div class="chatBox"><a class="close" href="">x</a>
+    <p>消費者經驗 Experience Consumption
+    </p>
+    </div>
+    <div class="chatBox"><a class="close" href="">x</a>
+        <p>開始體驗 Try it
+        </p>
+    
+    </div>
+    <div class="chatBox"><a class="close" href="">x</a>
+    <p>企業轉型 Enterprise Transformation</p>
+    </div>
+    <div class="chatBox"><a class="close" href="">x</a>
+    
+    </div>
 </nav>
 
 <main>
@@ -3203,9 +3219,7 @@
                 <div class="container ">
                     <h1>開啟時間帝國的新紀元吧！
                     </h1>
-                    <!-- <div class="效果的class" data-text="按鈕的名稱">
-                        <span>按鈕的名稱</span>
-                        </div> -->
+                   
                     <div class="btn_area" data-text="btn_startUse">
                     
                         <span class="btn btn_startUse">開始體驗</span>
@@ -3261,8 +3275,9 @@ setInterval(changeImage,500);
   crossorigin="anonymous"></script>
 
 <script>
-    var btns=document.querySelectorAll(".tower")
-    var chats=document.querySelectorAll(".chatBox")
+    var btns = document.querySelectorAll(".tower")
+    var chats = document.querySelectorAll(".chatBox")
+    var close = document.querySelectorAll(".close")
 
     function clear() {
         btns.forEach(function(btn,index) {
@@ -3279,11 +3294,17 @@ setInterval(changeImage,500);
         } 
     });
 
+    close.forEach(function (close,index) {
+        close.onclick = function () {
+            chats[index].classList.remove("active")
+        } 
+    });
+
 </script>
 
 <!-- wave -->
 <script>
-    var ocean = document.getElementById("ocean"),
+var ocean = document.getElementById("ocean"),
 waveWidth = 10,
 waveCount = Math.floor(window.innerWidth/waveWidth),
 docFrag = document.createDocumentFragment();
