@@ -116,18 +116,23 @@ nav #ocean .img {
 }
 
 nav .chatBox {
-  width: 200px;
-  height: 150px;
+  width: 300px;
+  height: 200px;
   background-color: #ADA299;
   border-radius: 20px;
   -webkit-box-shadow: 8px 5px 5px #3e4041;
           box-shadow: 8px 5px 5px #3e4041;
-  padding: 20px;
-  opacity: 0;
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+  display: none;
   z-index: 20;
   position: absolute;
   top: 60%;
   right: 20%;
+}
+
+nav .chatBox.active {
+  display: block;
 }
 
 nav .chatBox:nth-child(2) {
@@ -172,46 +177,15 @@ nav .chatBox:nth-child(6) {
           transition-timing-function: ease-in-out;
 }
 
-.rightTower:hover {
-  opacity: 0;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
+.tower {
+  opacity: 1;
   cursor: pointer;
 }
 
-.midTower:hover {
+.tower:hover {
   opacity: 0;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-  cursor: pointer;
-}
-
-.midWall:hover {
-  opacity: 0;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-  cursor: pointer;
-}
-
-.rightWall:hover {
-  opacity: 0;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-  cursor: pointer;
-}
-
-.leftTower:hover {
-  opacity: 0;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-  cursor: pointer;
-}
-
-.leftWall:hover {
-  opacity: 0;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-  cursor: pointer;
+  -webkit-transition: all 5s -5s;
+  transition: all 5s -5s;
 }
 
 .all {

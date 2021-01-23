@@ -3259,26 +3259,28 @@ setInterval(changeImage,500);
   src="https://code.jquery.com/jquery-3.5.1.js"
   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
   crossorigin="anonymous"></script>
+
 <script>
-    $(document).ready(function() {
+    var btns=document.querySelectorAll(".tower")
+    var chats=document.querySelectorAll(".chatBox")
 
-        $(".tower").hover(function(){
-            $(".chatBox").each(function(){
-                $('.chatBox').css('opacity', '1');
-            });
+    function clear() {
+        btns.forEach(function(btn,index) {
+            btns[index].classList.remove("hover")
+            chats[index].classList.remove("active")
         });
-        
+    }
 
+    btns.forEach(function (btn,index) {
+        btn.onclick = function () {
+            clear()
+            btns[index].classList.add("hover")
+            chats[index].classList.add("active")
+        } 
+    });
 
-//   $('.rightTower').on('mouseenter',function() {
-//     $('.chatBox').css('opacity', '1');
-//   });
-
-//   $('.rightTower').on('mouseleave',function() {
-//     $('.chatBox').removeAttr('style');
-//   });
-});
 </script>
+
 <!-- wave -->
 <script>
     var ocean = document.getElementById("ocean"),
