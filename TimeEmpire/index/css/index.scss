@@ -344,10 +344,20 @@ main{
         flex-wrap: wrap;
        
     }
+    @keyframes route{
+        from{
+            transform: rotate(0deg);
+        }to{
+            transform: rotate(360deg);
+        }
+    }
     .container{
         width: 100%;
         height: 100vh;
-        background-color: rgb(255, 255, 255);
+        // background-color: rgb(255, 255, 255);
+        background-image: url("/TimeEmpire/index/img/gear-06.png");
+        background-repeat: no-repeat;
+        background-size: contain;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -357,7 +367,7 @@ main{
         h1{
             text-align: center;
             font-size: 60px;
-            color: #D8D5CE;
+            color: #ADA299;
             @media screen and(max-width:600px) {
                 font-size: 36px;      
             }  
