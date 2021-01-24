@@ -1,3 +1,27 @@
+@mixin notebook() {
+  @media all and(max-width:1400px) {
+    @content;
+  }
+}
+@mixin pad() {
+  @media all and(max-width:1140px) {
+    @content;
+  }
+}
+
+@mixin smallpad {
+  @media all and(max-width:1000px) {
+    @content;
+  }
+}
+@mixin phone() {
+  @media all and(max-width:890px) {
+    @content;
+  }
+}
+
+
+
 // 波浪動畫
 // Wave Animation
 @keyframes wave {

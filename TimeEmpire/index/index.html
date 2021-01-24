@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
     <link rel="stylesheet" href="/TimeEmpire/index/css/index.css">
+    <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
 </head>
 <body>
     <div id="fb-root"></div>
     <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<nav>
+<nav> 
     <div id="ocean">
         <svg class="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
@@ -3074,41 +3078,60 @@
     </g>
         </svg>
     </div>
-    <div class="chatBox"><a class="close" href="">x</a>
-        <p>商品展示 Product Demo
-        </p>
+    <div class="chatBox">
+        <span class="close">x</span>
+        <p>商品展示</p>
+        <div class="connect-btn">
+            <a href="#productSection">了解更多</a>
+        </div>
     </div>
-    <div class="chatBox"><a class="close" href="">x</a>      
-        <p>市場差異化 Market Segmentation</p>
+    <div class="chatBox">
+        <span class="close">x</span>      
+        <p>市場差異化</p>
+        <div class="connect-btn">
+            <a href="#differention">了解更多</a>
+        </div>
     </div>
-    <div class="chatBox"><a class="close" href="">x</a>
-    <p>消費者經驗 Experience Consumption
-    </p>
+    <div class="chatBox">
+        <span class="close">x</span>
+        <p>Ｐersona人物誌</p>
+        <div class="connect-btn">
+            <a href="#persona">了解更多</a></div>
     </div>
-    <div class="chatBox"><a class="close" href="">x</a>
-        <p>開始體驗 Try it
-        </p>
+    <div class="chatBox">
+        <span class="close">x</span>
+        <p>開始體驗</p> 
+        <div class="connect-btn">
+            <a href="#startuse">了解更多</a>
+        </div>
+    </div>
+    <div class="chatBox">
+        <span class="close">x</span>
+        <p>企業轉型</p>
+        <div class="connect-btn">
+            <a href="#transformation">了解更多</a>
+        </div>
+    </div>
     
-    </div>
-    <div class="chatBox"><a class="close" href="">x</a>
-    <p>企業轉型 Enterprise Transformation</p>
-    </div>
-    <div class="chatBox"><a class="close" href="">x</a>
-    
+    <div class="chatBox">
+        <span class="close">x</span>
+        <p>聯絡我們</p>
+        <div class="connect-btn">
+            <a href="#contactUs">了解更多</a>
+        </div>
     </div>
 </nav>
-
 <main>
 <!-- 地球動畫 -->
 <section>
-            <div class="container">
-                <div class="banner">
-                    <div class="circle"></div>
-                </div>
-            </div>
+    <div class="container" id="transformation">
+        <div class="banner">
+            <div class="circle"></div>
+        </div>
+    </div>
 </section>
 <!-- 產品展示 -->
-<section class="product">
+<section class="product" id="productSection">
     <div class="container">
                 <div class="cardbox" data-aos="fade-right"
                 data-aos-offset="300"
@@ -3117,7 +3140,12 @@
                 <div class="cardbox" data-aos="zoom-in">
                     <h1>專案項目管理系統</h1>
                     <h3>
-                        公司內有多少專案再進行？每個專案花費了多少人力？每個專案已經花了多久時間？對於專案的掌握程度，不在需要透過不停開會來詢問，更有效率的評估、控管公司的成本收益，或是對於工作流程、人員安排有更適當的安排。
+                        公司內有多少專案再進行？<br>
+                        每個專案花費了多少人力？<br>
+                        每個專案已經花了多久時間？<br>
+                        對於專案的掌握程度，不在需要透過不停開會來詢問，<br>
+                        更有效率的評估、控管公司的成本收益，<br>
+                        或是對於工作流程、人員安排有更適當的安排。
 
                     </h3>
                 </div>
@@ -3132,7 +3160,11 @@
                 data-aos-easing="ease-in-sine">
                 <h1>任務點數系統</h1>
                     <h3>
-                        一個專案工作中，任務有難有易；一個團隊中，組員有強有弱。主管能夠將專案拆分成不同等級的小任務，賦予不同的獎勵點數，分配給適合的人選，也可以由組員去爭取他們自己想要的工作任務。
+                        一個專案工作中，任務有難有易；<br>
+                        一個團隊中，組員有強有弱。<br>
+                        主管能夠將專案拆分成不同等級的小任務，<br>
+                        賦予不同的獎勵點數，
+                        分配給適合的人選，<br>也可以由組員去爭取他們自己想要的工作任務。
 
                     </h3>
                 </div>
@@ -3142,7 +3174,12 @@
                 <div class="cardbox" data-aos="zoom-in">
                     <h1>個人整體工時系統</h1>
                     <h3>
-                        將傳統的工作日誌，轉換成簡易明瞭的圖形，追蹤自己的時間都跑去哪了？周工時40小時的情況下，更能掌握自己在不同專案、不同任務所需要的時間，由此更精準的評估自身適合那些工作？那些工作是強項？那些工作是不擅長。
+                        將傳統的工作日誌，轉換成簡易明瞭的圖形，<br>
+                        追蹤自己的時間都跑去哪了？<br>
+                        周工時40小時的情況下，<br>
+                        更能掌握自己在不同專案、不同任務所需要的時間，<br>
+                        由此更精準的評估自身適合那些工作？<br>
+                        那些工作是強項？那些工作是不擅長。
                     </h3>
                 </div>
 
@@ -3151,7 +3188,11 @@
                 <div class="cardbox" data-aos="zoom-in">
                     <h1>工時透明化</h1>
                     <h3>
-                        跟搭便車、總在茶水間的隊友 say bye bye，讓專案同組的組員間、專案主管，更能夠清楚自己的隊友在忙些什麼事情，若有緊急又重要的項目，可以交付給上有能量負擔的員工。老闆不在需要緊迫盯人，緩解勞資雙方關係。
+                        跟搭便車、總在茶水間的隊友 say bye bye，<br>
+                        讓專案同組的組員間、專案主管，<br>
+                        更能夠清楚自己的隊友在忙些什麼事情，<br>
+                        若有緊急又重要的項目，可以交付給上有能量負擔的員工。<br>
+                        老闆不在需要緊迫盯人，緩解勞資雙方關係。
 
                     </h3>
                 </div>
@@ -3161,28 +3202,28 @@
 
     </div>
 </section>
-    <section class="project-feature">
+    <section class="project-feature" id="differention">
         <div class="container">
             <div class="swipper">
-                <div class="photo">
+                <div class="photo" style="background-image: url('/TimeEmpire/index/img/photo1.png');">
                     <h2>簡約設計風格<br>
                     簡單明瞭的線條設計<br>降低系統導入時的學習成本。
                 </h2>
                 </div>
-                <div class="photo">
+                <div class="photo" style="background-image: url('/TimeEmpire/index/img/photo4.png');">
                     <h2>遊戲化的引導<br>
                         會心一笑的對話<br>偶爾的樂透特休激勵系統。
                     </h2>
                 </div>
             </div>
             <div class="swipper down-swipper">
-                <div class="photo">
+                <div class="photo" style="background-image: url('/TimeEmpire/index/img/photo3.png');">
                     <h2>
                         更清楚的專案動向<br>
                         任務點數、時數交集比對<br>專案進度不delay。
                     </h2>
                 </div>
-                <div class="photo">
+                <div class="photo" style="background-image: url('/TimeEmpire/index/img/photo2.png');">
                     <h2>工作流程的優化<br>
                         透過數據反思專案經驗<br>讓每下一次的專案都更有效率。
                     </h2>
@@ -3203,43 +3244,52 @@
         </div> -->
     </section>
 
-<section class="start_use">
-    <div class="ig-content">
-    
-<!-- 第一則 -->
-<div class="fb-post" data-href="https://www.facebook.com/Code.org/posts/3585131694916441" data-width="280" data-show-text="true"><blockquote cite="https://www.facebook.com/Code.org/posts/3585131694916441" class="fb-xfbml-parse-ignore"><p>&quot;Physics, computer science and engineering have only about 20 percent of degree recipients identifying as women for the last decade. We are largely missing out on the talents of half of the population.&quot;</p>由 <a href="https://www.facebook.com/Code.org/">Code.org</a> 發佈於&nbsp;<a href="https://www.facebook.com/Code.org/posts/3585131694916441">2021年1月21日 星期四</a></blockquote></div>
-<!-- 第二則 -->
-<div class="fb-post" data-href="https://www.facebook.com/Code.org/posts/3572533896176221" data-width="280" data-show-text="true"><blockquote cite="https://www.facebook.com/Code.org/posts/3572533896176221" class="fb-xfbml-parse-ignore"><p>We&#039;re going to need so many more new computer scientists to tackle these problems! Every student should have the ability to study artificial intelligence and machine learning in their classrooms.</p>由 <a href="https://www.facebook.com/Code.org/">Code.org</a> 發佈於&nbsp;<a href="https://www.facebook.com/Code.org/posts/3572533896176221">2021年1月16日 星期六</a></blockquote></div>
-<!-- 第三則 -->
-<div class="fb-post" data-href="https://www.facebook.com/Code.org/posts/3566947380068206" data-width="280" data-show-text="true"><blockquote cite="https://www.facebook.com/Code.org/posts/3566947380068206" class="fb-xfbml-parse-ignore"><p>AI researchers are increasingly turning their efforts toward developing AI algorithms that can explain themselves in a...</p>由 <a href="https://www.facebook.com/Code.org/">Code.org</a> 發佈於&nbsp;<a href="https://www.facebook.com/Code.org/posts/3566947380068206">2021年1月14日 星期四</a></blockquote></div>
-<!-- 第四則 -->
-<div class="fb-post" data-href="https://www.facebook.com/Code.org/posts/3562271167202494" data-width="280" data-show-text="true"><blockquote cite="https://www.facebook.com/Code.org/posts/3562271167202494" class="fb-xfbml-parse-ignore"><p>The COVID-19 vaccine is a liquid that gets injected in your arm, so how can we talk about source code? This article explains the similarities between vaccine development and writing code! 😮🖥</p>由 <a href="https://www.facebook.com/Code.org/">Code.org</a> 發佈於&nbsp;<a href="https://www.facebook.com/Code.org/posts/3562271167202494">2021年1月12日 星期二</a></blockquote></div>
+<section class="start_use" id="persona">
+    <div class="ig-content"> 
+            <!-- 第一則 -->
+        <div class="ig-text">  
+            <img src="/TimeEmpire/index/img/instagram_post.png" alt="">
+        </div>
+            <!-- 第二則 -->
+        <div class="ig-text">
+            <img src="/TimeEmpire/index/img/instagram_post (3).png" alt="">
+        </div>
+            <!-- 第三則 -->
+        <div class="ig-text">
+            <img src="/TimeEmpire/index/img/instagram_post (2).png" alt="">
+        </div>
+            <!-- 第四則 -->
+        <div class="ig-text">
+            <img src="/TimeEmpire/index/img/instagram_post (1).png" alt="">
+        </div>
+
             
         </div>
-                <div class="container ">
-                    <h1>開啟時間帝國的新紀元吧！
-                    </h1>
-                   
-                    <div class="btn_area" data-text="btn_startUse">
-                    
-                        <a class="btn btn_startUse">開始體驗</a>
-                    </div>
-                    
-                </div>
+    <div class="container ">
+        <h1>開啟時間帝國的新紀元吧！
+        </h1>
+        <div class="btn_area" data-text="btn_startUse">
+        
+            <a class="btn btn_startUse" id="startuse">開始體驗</a>
+        </div>
+        
+    </div>
     </section>
 
 </main>
     
-<footer>
+<footer >
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58224.776652294575!2d120.65953296428678!3d24.205079483831707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34691a0f76c278fd%3A0x2877808fa5ca752d!2z5LiK55uK6LOH6KiK!5e0!3m2!1szh-TW!2stw!4v1611201215202!5m2!1szh-TW!2stw" width="50%" height="100%" frameborder="0" allowfullscreen="" aria-hidden="false" ></iframe>
-    <ul>聯絡資訊
+    <ul id="contactUs">聯絡資訊
         <li>營業時間：周一至周五：09:00 ～ 18:00。</li>
         <li>連絡電話：(04) 2522-5596
         </li>
         <li>地址：42056台中市豐原區中正路127號</li>
-        <li>Instagram  Facebook  Github
+        <li>
+            <a href=""><i class="fab fa-facebook-square"></i></a>
+            <a href=""><i class="fab fa-line"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
         </li>
-        
     </ul>
 </footer>
 <!-- Aos -->
@@ -3293,7 +3343,6 @@ setInterval(changeImage,500);
             chats[index].classList.add("active")
         } 
     });
-
     close.forEach(function (close,index) {
         close.onclick = function () {
             chats[index].classList.remove("active")
@@ -3318,7 +3367,6 @@ wave.style.webkitAnimationDelay = (i/100) + "s";
 }
 
 ocean.appendChild(docFrag);
-
 
 </script>
 </body>
