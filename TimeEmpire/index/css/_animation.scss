@@ -8,7 +8,6 @@
     @content;
   }
 }
-
 @mixin smallpad {
   @media all and(max-width:1000px) {
     @content;
@@ -19,22 +18,16 @@
     @content;
   }
 }
-
-
-
-// 波浪動畫
 // Wave Animation
 @keyframes wave {
 	50% { transform: scaleY(1.6) }
 }
-
 @keyframes move{
     from{
         transform: rotate(0);
     }
     to{
         transform: rotate(45deg);
-
     }
 }
 @keyframes dostuff{
@@ -48,14 +41,11 @@
     height:60%;
   }
 }
-
-
-  
-  @keyframes swell {
+@keyframes swell {
     0%, 100% {
       transform: translate3d(0,-25px,0);
     }
     50% {
       transform: translate3d(0,5px,0);
     }
-  }
+}
