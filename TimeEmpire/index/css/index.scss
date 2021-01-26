@@ -26,10 +26,31 @@ nav{
     //     min-height:100%;
     //     background-image:linear-gradient(linear,left bottom,left top,
     //     color-stop(0, #ABA29A),color-stop(0.50, #8d8177));
-    //     .img{
-    //         width: 100%; 
-    //     }
     // }
+    @include phone{
+        height: 30vh;
+    }
+    .prompt-win{
+        width: 100px;
+        height: 100px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 100%;
+        box-shadow:0 0 5px 4px white ;
+        font-size: 18px;
+        color: rgb(94, 90, 87);
+        line-height: 100px;
+        text-align: center;
+        position: absolute;
+        bottom: 50%;
+        left: 58%;
+        animation-name: jump;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        @include notebook{
+            display: none;
+        }
+    }
+
     .wave{
         width:10px;
         height:60%;
@@ -44,8 +65,8 @@ nav{
     }
     // 主按鈕：聯絡我們
     .chatBox{
-        width: 500px;
-        height: 200px;
+        width: 30%;
+        height: 20%;
         background-color: #bdb5af;
         border-radius: 20px;
         box-shadow: 8px 5px 5px rgb(62, 64, 65);
@@ -55,9 +76,14 @@ nav{
         position: absolute;
         top: 30%;
         right: 8%;
+        @include phone{
+            top: 0;
+            width: 150px;
+            height: 100px;
+        }
         .connect-btn{
-            width: 300px;
-            height:60px;
+            width: 50%;
+            height:30%;
             font-size: 35px;
             line-height: 60px;
             text-align: center;
@@ -69,12 +95,19 @@ nav{
                 text-decoration: none;
                 color: #b09585;
             }
+            @include phone{
+                font-size: 15px;
+                line-height: 30px;
+            }
         }
         p{  
-            font-size: 48px;
+            font-size: 40px;
             color: #fff;
-            line-height: 5px;
+            line-height: 1px;
             text-align: center;
+            @include phone{
+                font-size: 24px;
+            }
         }
         .close{
             font-size: 24px;
@@ -89,28 +122,48 @@ nav{
         // 市場差異化
         &:nth-child(3){
             top: 1%;
-            right: 20%;
+            right: 20%; 
+            @include phone{
+                top: 0;
+                right: 30%;
+            }  
         }
         //商品展示 
         &:nth-child(2){
             top: 60%;
             right: 10%;
+            @include phone{
+                top: 10%;
+                right: 5%;
+            }
         }
         // 人物誌
         &:nth-child(4){
             top: 1%;
             left: 20%;
+            @include phone{
+                top: 10%;
+                left: 5%;
+            }
         }
        
         // 開始體驗
         &:nth-child(5){
             top: 65%;
             left: 15%;
+            @include phone{
+                top: 20%;
+                left: 35%;
+            }
         }
          // 企業轉型
          &:nth-child(6){
             top: 30%;
             left: 5%;
+            @include phone{
+                top: 0;
+                left: 8%;
+            }
         }
     }
 }
@@ -131,9 +184,14 @@ nav{
 main{
     .container{
         h5{
-            font-size: 35px;
+            font-size: 48px;
+            color: rgb(99, 88, 76);
             line-height: 85px;
-            text-align: center;  
+            text-align: center;
+            @include phone{
+                font-size: 24px;
+                line-height: 40px;
+            }  
         }
         .banner{
             width: 100%;
@@ -142,6 +200,52 @@ main{
             background: linear-gradient(25deg, #D7D5CF 50%,transparent 50%) center center/100% 100%,#E8E3DD right center / auto 100%;
             position: relative;
             display: flex; 
+            .floating-windows{
+                width: 600px;
+                height: 300px;
+                background-color: rgba(12, 12, 12, 0.3);
+                border-radius: 30px;
+                box-shadow:10px 10px 20px rgb(80, 75, 75) ;
+                margin-top: 600px;
+                margin-left: 20px;
+                overflow:hidden;
+                text-overflow: ellipsis;
+                opacity: 0;
+                animation-name: window-first;
+                animation-duration: 6s;
+                animation-iteration-count: infinite;
+                animation-delay: 3s;
+                @include phone{
+                    margin-top:unset ;
+                    margin-top: 400px;
+                    width: 500px;
+                    height: 300px;
+
+                } 
+                h2{
+                    text-align: center;
+                    color: rgb(99, 88, 76);
+                    @include phone{
+                        font-size: 36px;
+                        writing-mode:vertical-rl;margin-top: 20px;  
+                        padding-left: 10px;
+                    }  
+                }
+                p{
+                    font-size: 20px;
+                    color: #ffffff;
+                    padding: 0 20px;
+                    @include phone{
+                        opacity: 0;
+                    } 
+                }
+                &:nth-child(3){
+                    margin-top: 100px;
+                    margin-right: 20px;
+                    animation-duration: 4s;
+                    animation-delay: unset;
+                }
+            }
             .circle{
                 width: 600px;
                 height: 600px;
@@ -182,13 +286,23 @@ main{
         }
         h1{
             font-size: 35px; 
-            color: white;
+            color: white; 
+            @include phone{
+                font-size: 24px;
+                text-align: start;
+            } 
         }
         h3{
             font-size: 23px;
             line-height: 50px;
             letter-spacing: 2px;
             color: #B09585; 
+            @include phone{
+            font-size: 18px;
+            line-height: 28px;
+            letter-spacing: 2px;
+            text-align: start;
+            }
         }
         .cardbox{
             &:nth-child(1){order: 1;}
@@ -213,7 +327,7 @@ main{
                 text-align: center;
                 background-image: url("https://p85.p2.n0.cdn.getcloudapp.com/items/WnuJ7m84/column.gif");    
             }
-            @media screen and(max-width:1140px) {
+            @include pad {
                 &:nth-child(1){order: 2;}
                 &:nth-child(2){order: 1;text-align: center;}
                 &:nth-child(3){order: 4;}
@@ -239,6 +353,7 @@ main{
     background-position: center;
 }
 .project-feature{
+    height: auto;
     .container{
         width: 100%;
         height: 100%;
@@ -264,66 +379,114 @@ main{
             @include smallpad{
                 height: auto;
             } 
-        }
-        .photo{
-            width: 50%;
-            height: 100%;
-            background-color: rgb(255, 255, 255);    
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-
-            @include pad{
-                width: 48%;
-                height: 50%;
-                margin-left: 10px;
-                margin-right: 10px;
-            } 
-            @include smallpad{
-                width: 90%;
-                height: 50%;
-                margin: auto;
-            } 
-            &:nth-child(2){
-                margin-top: 200px;
-            }            
-            h2{
-                font-size: 36px;
-                text-align: center;
-                margin-top: 300px;
-                line-height: 100px;
-                opacity: 0;
-                color: rgb(255, 255, 255);
+            .photo{
+                width: 50%;
+                height: 100%;
+                background-color: rgb(255, 255, 255);   
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &:nth-child(1){
+                    @include phone{
+                        padding-top: 500px;
+                    }
+                }
+                &:nth-child(2){
+                    background-position:left 0 bottom 25%;
+                    @include phone{
+                    background-position:left 0 bottom 60%;
+                        
+                    }
+                    h2{
+                        margin-top: 400px;
+                        @include phone{
+                            font-size: 24px;
+                            color: rgb(0, 0, 0);
+                            opacity: 1;
+                            text-align: start;
+                            line-height: 40px;
+                        }
+                    }
+                }
                 @include pad{
-                    margin-top: unset;
-                    margin-top: 120px;
+                    width: 48%;
+                    height: 50%;
+                    margin-left: 10px;
+                    margin-right: 10px;
                 } 
                 @include smallpad{
-                    margin-top: unset;
-                    margin-top: 30px;
+                    width: 90%;
+                    height: 50%;
+                    margin: auto;
                 } 
-            }
-            &:hover{
-                filter: brightness(0.6);
-            }
-            &:hover h2{
-                opacity: 1;
-            
-                transition: 0.5s;
-                background: rgba(0,0,0,.6);
+                @include smallpad{
+                   margin-bottom: 20px;
+                }          
+                h2{
+                    font-size: 36px;
+                    text-align: center;
+                    line-height: 100px;
+                    opacity: 0;
+                    color: rgb(255, 255, 255);
+                    margin-bottom: 200px;
+                    @include pad{
+                        margin-top: unset;
+                        margin-top: 120px;
+                    } 
+                    @include smallpad{
+                        margin-top: unset;
+                        margin-top: 30px;
+                    } 
+                    @include phone{
+                        font-size: 24px;
+                        color: rgb(0, 0, 0);
+                        opacity: 1;
+                        text-align: start;
+                        line-height: 40px;
+                        
+                    }
+                }
+                &:hover{
+                    filter: brightness(0.6);
+                }
+                &:hover h2{
+                    opacity: 1;
+                    transition: 0.8s;
+                    background: rgba(0,0,0,.5);
+                    width: 100%;
+                }
             }
         }
+        .down-swipper{
+            .photo{
+                background-position:left 0 top 25%;
+                &:nth-child(2){
+                    background-position:left 0 bottom 30%;
+                    @include phone{
+                        background-position:left 0 bottom 60%;
+                    }
+                }
+
+            }
+        }
+        
     }
 }
 .social-recommand{
     width: 100%;
     height: 80vh;
+    @include phone{
+        height: auto; 
+        padding-top: 50px;
+    }
 }
 
 .start_use{
     width: 100%;
     height: 100%;
-    
     .ig-content{
         width: 100%;
         height: 100vh;
@@ -338,7 +501,7 @@ main{
             height: 500vh;  
         } 
         @include phone{
-            height: 500vh;  
+            height: auto;  
         } 
         .ig-text{
             width: 25%;
@@ -351,6 +514,9 @@ main{
                     height: 20%;
                     margin: auto;
                 }    
+                @include phone{
+                    margin-top: 20px;
+                } 
             img{
                 width: 95%;
             } 

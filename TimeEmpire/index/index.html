@@ -16,7 +16,8 @@
     <div id="fb-root"></div>
     <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
 <nav> 
-    <div id="ocean">
+    <div class="prompt-win">Try to Click</div>
+    <div id="ocean" >
         <!-- 別打開會當機 3xxx行的程式碼 -->
      <svg class="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
@@ -3078,7 +3079,7 @@
                 L1116.4,567.6z"/>
         </g>
     </g>
-     </svg>
+    </svg>
     </div>
     <div class="chatBox">
         <span class="close">x</span>
@@ -3127,12 +3128,21 @@
 <!-- 地球動畫 -->
 <section>
     <div class="container" id="transformation">
-        <h5>在家工作，對台灣來說，2020年之前還是個「替代選項」（alternative）<br>
-            但在新冠肺炎（COVID-19）盛行後，卻變成了「非要不可」（must）<br>遠距工作為員工省掉通勤的時間
+        <h5>
+            工時管理系統-協助高效控管您的時間成本
         </h5>
         <div class="banner">
+            <div class="floating-windows">
+                <h2>遠距工作之難</h2>
+                    <p>在家工作，對台灣來說，2020年之前還是個「替代選項」（alternative），但在新冠肺炎（COVID-19）盛行後，卻變成了「非要不可」（must）。遠距工作為員工帶來了，省掉通勤的時間、通勤費用，省下午餐晚餐外食時間和金錢的優點；同時少了辦公室的噪音、同事走來走去、他人大聲談話或做事被打斷的等等干擾，員工能更專注一次完成一項任務，一心多用不只會降低專注力和效率，研究也顯示，只要一件正在進行的事情被打斷，效率就會減少20%！
+                </p>
+            </div> 
             <div class="circle"></div>
-           
+            <div class="floating-windows">
+                <h2>企業微型化之痛</h2>
+	<p>「企業微型化」是指企業走向專業化、人力精簡化的方向，透過解放金字塔階層結構的方式，擺脫中間管理層、降低管理，實際落實資訊透明化，並且擁有雲端的知識管理系統，來降低溝通成本，將過往企業習慣的向外開源，走向向內開源。</p>
+
+            </div>           
         </div>
     </div>
 </section>
@@ -3141,7 +3151,7 @@
     <div class="container">
                 <div class="cardbox" data-aos="fade-right"
                 data-aos-offset="300"
-                data-aos-easing="ease-in-sine">
+                data-aos-easing="ease-in-sine" style="background-image: url('img/GIF.gif');">
                 </div>
                 <div class="cardbox" data-aos="zoom-in">
                     <h1>專案項目管理系統</h1>
@@ -3210,25 +3220,25 @@
 <section class="project-feature" id="differention">
         <div class="container">
             <div class="swipper">
-                <div class="photo" style="background-image: url('/TimeEmpire/index/img/photo1.png');">
+                <div class="photo" style="background-image: url('/TimeEmpire/index/img/project-feature (1).jpg');">
                     <h2>簡約設計風格<br>
                     簡單明瞭的線條設計<br>降低系統導入時的學習成本。
                 </h2>
                 </div>
-                <div class="photo" style="background-image: url('/TimeEmpire/index/img/photo4.png');">
+                <div class="photo" style="background-image: url('/TimeEmpire/index/img/project-feature (2).jpg');">
                     <h2>遊戲化的引導<br>
                         會心一笑的對話<br>偶爾的樂透特休激勵系統。
                     </h2>
                 </div>
             </div>
             <div class="swipper down-swipper">
-                <div class="photo" style="background-image: url('/TimeEmpire/index/img/photo3.png');">
+                <div class="photo" style="background-image: url('/TimeEmpire/index/img/project-feature (3).jpg');">
                     <h2>
                         更清楚的專案動向<br>
                         任務點數、時數交集比對<br>專案進度不delay。
                     </h2>
                 </div>
-                <div class="photo" style="background-image: url('/TimeEmpire/index/img/photo2.png');">
+                <div class="photo" style="background-image: url('/TimeEmpire/index/img/project-feature (4).jpg');">
                     <h2>工作流程的優化<br>
                         透過數據反思專案經驗<br>讓每下一次的專案都更有效率。
                     </h2>
@@ -3313,6 +3323,14 @@
     var btns = document.querySelectorAll(".tower")
     var chats = document.querySelectorAll(".chatBox")
     var close = document.querySelectorAll(".close")
+    var windows = document.querySelectorAll(".floating-windows")
+    var circle = document.querySelector(".circle")
+    var prompts = document.querySelector(".prompt-win")
+    
+
+    circle.onclick = function () {
+        windows.classList.add("active")
+    }
 
     function clear() {
         btns.forEach(function(btn,index) {
@@ -3326,8 +3344,10 @@
             clear()
             btns[index].classList.add("hover")
             chats[index].classList.add("active")
+            prompts.setAttribute('hidden','hidden')
         } 
     });
+
     close.forEach(function (close,index) {
         close.onclick = function () {
             chats[index].classList.remove("active")
@@ -3338,21 +3358,41 @@
 
 <!-- wave -->
 <script>
-var ocean = document.getElementById("ocean"),
-waveWidth = 10,
-waveCount = Math.floor(window.innerWidth/waveWidth),
-docFrag = document.createDocumentFragment();
+$(document).ready(function () {
+    var ocean = document.getElementById("ocean"),
+    waveWidth = 10,
+    waveCount = Math.floor((window.innerWidth-17)/waveWidth),
+    docFrag = document.createDocumentFragment();
 
-for(var i = 0; i < waveCount; i++){
-var wave = document.createElement("div");
-wave.className += " wave";
-docFrag.appendChild(wave);
-wave.style.left = i * waveWidth + "px";
-wave.style.webkitAnimationDelay = (i/100) + "s";
-}
+    for(var i = 0; i < waveCount; i++){
+    var wave = document.createElement("div");
+    wave.className += " wave";
+    docFrag.appendChild(wave);
+    wave.style.left = i * waveWidth + "px";
+    wave.style.webkitAnimationDelay = (i/100) + "s";
+    }
 
-ocean.appendChild(docFrag);
+    ocean.appendChild(docFrag);
+});
 
+$( window ).resize(function() {
+   window.setTimeout(() => {
+        var ocean = document.getElementById("ocean"),
+        waveWidth = 10,
+        waveCount = Math.floor((window.innerWidth-17)/waveWidth),
+        docFrag = document.createDocumentFragment();
+
+        for(var i = 0; i < waveCount; i++){
+        var wave = document.createElement("div");
+        wave.className += " wave";
+        docFrag.appendChild(wave);
+        wave.style.left = i * waveWidth + "px";
+        wave.style.webkitAnimationDelay = (i/100) + "s";
+        }
+        $('.wave').remove();
+        ocean.appendChild(docFrag);
+   }, 300);
+});
 </script>
 </body>
 </html>
