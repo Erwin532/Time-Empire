@@ -32,6 +32,18 @@
     }
 }
 
+@keyframes scale{
+  0%{
+    transform: scale(1);  
+  }25%{
+    transform: scale(2); 
+  }50%{
+    transform: scale(1);
+  }75%{
+    transform: scale(2);
+  }
+}
+
 @keyframes jump {
   0%{
     transform: translateY(10px);

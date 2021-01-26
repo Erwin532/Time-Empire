@@ -16,7 +16,7 @@
     <div id="fb-root"></div>
     <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
 <nav> 
-    <div class="prompt-win">Try to Click</div>
+    
     <div id="ocean" >
         <!-- 別打開會當機 3xxx行的程式碼 -->
      <svg class="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -3123,6 +3123,7 @@
             <a href="#contactUs">了解更多</a>
         </div>
     </div>
+    <div class="prompt-win">Try to Click</div>
 </nav>
 <main>
 <!-- 地球動畫 -->
@@ -3133,15 +3134,20 @@
         </h5>
         <div class="banner">
             <div class="floating-windows">
+                <span id="close2">X</span>
                 <h2>遠距工作之難</h2>
-                    <p>在家工作，對台灣來說，2020年之前還是個「替代選項」（alternative），但在新冠肺炎（COVID-19）盛行後，卻變成了「非要不可」（must）。遠距工作為員工帶來了，省掉通勤的時間、通勤費用，省下午餐晚餐外食時間和金錢的優點；同時少了辦公室的噪音、同事走來走去、他人大聲談話或做事被打斷的等等干擾，員工能更專注一次完成一項任務，一心多用不只會降低專注力和效率，研究也顯示，只要一件正在進行的事情被打斷，效率就會減少20%！
+                    <p>在家工作對台灣來說，2020年之前還是個「替代選項」（alternative），但在新冠肺炎（COVID-19）後，卻變成了「非要不可」（must）。遠距工作為員工帶來了，省掉通勤的時間、通勤費用，省下午餐晚餐外食時間和金錢的優點；同時少了辦公室的噪音、大聲談話或做事被打斷等等干擾，員工能更專注一次完成一項任務，一心多用不只會降低專注力和效率，研究也顯示，只要一件正在進行的事情被打斷，效率就會減少20%！
                 </p>
             </div> 
-            <div class="circle"></div>
+            <div class="circle">
+                <div class="point">
+                </div>
+                <div class="point"></div>
+            </div>
             <div class="floating-windows">
+                <span id="close2">X</span>
                 <h2>企業微型化之痛</h2>
 	<p>「企業微型化」是指企業走向專業化、人力精簡化的方向，透過解放金字塔階層結構的方式，擺脫中間管理層、降低管理，實際落實資訊透明化，並且擁有雲端的知識管理系統，來降低溝通成本，將過往企業習慣的向外開源，走向向內開源。</p>
-
             </div>           
         </div>
     </div>
@@ -3168,7 +3174,6 @@
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine">
                 </div>
-
                 <div class="cardbox" data-aos="fade-right"
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine">
@@ -3182,7 +3187,6 @@
 
                     </h3>
                 </div>
-                
                 <div class="cardbox" data-aos="zoom-in"> 
                 </div>
                 <div class="cardbox" data-aos="zoom-in">
@@ -3196,7 +3200,6 @@
                         那些工作是強項？那些工作是不擅長。
                     </h3>
                 </div>
-
                 <div class="cardbox" data-aos="zoom-in"> 
                 </div>
                 <div class="cardbox" data-aos="zoom-in">
@@ -3210,10 +3213,6 @@
 
                     </h3>
                 </div>
-
-
-
-
     </div>
 </section>
 <div class="icon"></div>
@@ -3244,38 +3243,30 @@
                     </h2>
                 </div>
             </div>  
-            
-            
         </div>
-    
 </section>
 
-    <section class="social-recommand">
-        <!-- <div class="container-circle">
-            <div class="social"></div>
-            <div class="social"></div>
-            <div class="social"></div>
-            <div class="social"></div>
-        </div> -->
-    </section>
+<section class="social-recommand">
+    
+</section>
 
 <section class="start_use" id="persona">
     <div class="ig-content"> 
             <!-- 第一則 -->
         <div class="ig-text">  
-            <img src="/TimeEmpire/index/img/instagram_post.png" alt="">
+            <img src="/TimeEmpire/index/img/tweet_post (1).png" alt="">
         </div>
             <!-- 第二則 -->
         <div class="ig-text">
-            <img src="/TimeEmpire/index/img/instagram_post (3).png" alt="">
+            <img src="/TimeEmpire/index/img/tweet_post (2).png" alt="">
         </div>
             <!-- 第三則 -->
         <div class="ig-text">
-            <img src="/TimeEmpire/index/img/instagram_post (2).png" alt="">
+            <img src="/TimeEmpire/index/img/tweet_post (3).png" alt="">
         </div>
             <!-- 第四則 -->
         <div class="ig-text">
-            <img src="/TimeEmpire/index/img/instagram_post (1).png" alt="">
+            <img src="/TimeEmpire/index/img/tweet_post.png" alt="">
         </div>
 
             
@@ -3354,6 +3345,22 @@
         } 
     });
 
+    var pot = document.querySelectorAll(".point");
+    var windows = document.querySelectorAll(".floating-windows");
+    var close2 =document.querySelectorAll("#close2");
+    
+    pot.forEach(function (pot,index) {
+        pot.onclick=function(){
+            windows[index].style.opacity = "1"
+        }
+    })
+
+    close2.forEach(function (close,index) {
+        close.onclick = function () {
+            windows[index].style.opacity = "0"
+        } 
+    });
+    
 </script>
 
 <!-- wave -->

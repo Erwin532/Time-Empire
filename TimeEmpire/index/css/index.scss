@@ -33,6 +33,7 @@ nav{
     .prompt-win{
         width: 100px;
         height: 100px;
+        float: left;
         background-color: rgba(255, 255, 255, 0.5);
         border-radius: 100%;
         box-shadow:0 0 5px 4px white ;
@@ -46,7 +47,7 @@ nav{
         animation-name: jump;
         animation-duration: 0.5s;
         animation-iteration-count: infinite;
-        @include notebook{
+        @include pad{
             display: none;
         }
     }
@@ -74,7 +75,7 @@ nav{
         display: none;
         z-index: 20;
         position: absolute;
-        top: 30%;
+        top: 65%;
         right: 8%;
         @include phone{
             top: 0;
@@ -94,6 +95,10 @@ nav{
             a{
                 text-decoration: none;
                 color: #b09585;
+            }
+            @include notebook{
+                font-size: 24px;
+                line-height: 50px;
             }
             @include phone{
                 font-size: 15px;
@@ -119,35 +124,39 @@ nav{
         &.active{
             display: block;
         }
-        // 市場差異化
-        &:nth-child(3){
-            top: 1%;
-            right: 20%; 
-            @include phone{
-                top: 0;
-                right: 30%;
-            }  
-        }
-        //商品展示 
+        &:nth-child(1){
+            top: 20%;
+            right: 0;
+        }       
+        // 企業轉型
         &:nth-child(2){
-            top: 60%;
+            top: 30%;
             right: 10%;
             @include phone{
                 top: 10%;
                 right: 5%;
             }
         }
-        // 人物誌
+        // 商品展示 
+        
+        &:nth-child(3){
+            top: 1%;
+            right: 20%; 
+            @include phone{
+                top: 0;
+                right: 0;
+            }  
+        }
+         // 市場差異化
         &:nth-child(4){
             top: 1%;
-            left: 20%;
+            left: 10%;
             @include phone{
                 top: 10%;
                 left: 5%;
             }
         }
-       
-        // 開始體驗
+        // 人物誌
         &:nth-child(5){
             top: 65%;
             left: 15%;
@@ -211,17 +220,21 @@ main{
                 overflow:hidden;
                 text-overflow: ellipsis;
                 opacity: 0;
-                animation-name: window-first;
-                animation-duration: 6s;
-                animation-iteration-count: infinite;
-                animation-delay: 3s;
+                @include pad{
+                    height: 600px;
+                } 
                 @include phone{
                     margin-top:unset ;
                     margin-top: 400px;
                     width: 500px;
                     height: 300px;
-
                 } 
+                span{
+                    font-size: 18px;
+                    font-weight: bolder;
+                    padding: 20px;
+                    cursor: pointer;
+                }
                 h2{
                     text-align: center;
                     color: rgb(99, 88, 76);
@@ -235,6 +248,9 @@ main{
                     font-size: 20px;
                     color: #ffffff;
                     padding: 0 20px;
+                    @include pad{
+                        
+                    } 
                     @include phone{
                         opacity: 0;
                     } 
@@ -250,12 +266,33 @@ main{
                 width: 600px;
                 height: 600px;
                 margin: auto;
+                position: relative;
                 background: {
                     image: url("/TimeEmpire/index/img/Earyh-all.png");size: contain;position: center;repeat: no-repeat;
                 };
                 animation: {
                     name: move;duration: 3s;iteration-count: infinite;direction: alternate-reverse;
                 };  
+                .point{
+                    width: 10px;
+                    height: 10px;
+                    background-color: rgba(150, 141, 141, 0.2);
+                    border: 2px solid white;
+                    border-radius: 100%;
+                    position: absolute;
+                    animation-name: scale;
+                    animation-duration: 2s;
+                    animation-iteration-count: infinite;
+                    cursor: pointer;
+                    &:nth-child(1){
+                        bottom: 0%;
+                        left: 60%;
+                    }
+                    &:nth-child(2){
+                        top: 0%;
+                        left: 40%;
+                    }
+                }
             }
         }
     }
@@ -368,9 +405,9 @@ main{
             &:nth-child(2){
                position: absolute; 
                top: 60%;
-                @include smallpad{
-                    position: unset;
-                } 
+            @include smallpad{
+                position: unset;
+            } 
             }
             @include pad{
                 padding-top: 100px;
@@ -397,11 +434,14 @@ main{
                 &:nth-child(2){
                     background-position:left 0 bottom 25%;
                     @include phone{
+                    padding-top: 500px;
                     background-position:left 0 bottom 60%;
-                        
                     }
                     h2{
                         margin-top: 400px;
+                        @include notebook{
+                            margin-top: unset;
+                        } 
                         @include phone{
                             font-size: 24px;
                             color: rgb(0, 0, 0);
@@ -432,9 +472,12 @@ main{
                     opacity: 0;
                     color: rgb(255, 255, 255);
                     margin-bottom: 200px;
+                    @include notebook{
+                        margin-bottom: unset;
+                        margin-top: unset;
+                    } 
                     @include pad{
                         margin-top: unset;
-                        margin-top: 120px;
                     } 
                     @include smallpad{
                         margin-top: unset;
@@ -469,6 +512,7 @@ main{
                         background-position:left 0 bottom 60%;
                     }
                 }
+                
 
             }
         }
