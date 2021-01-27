@@ -4,7 +4,7 @@
   }
 }
 @mixin pad() {
-  @media all and(max-width:1140px) {
+  @media all and(max-width:1200px) {
     @content;
   }
 }

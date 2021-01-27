@@ -232,7 +232,7 @@ main{
                 span{
                     font-size: 18px;
                     font-weight: bolder;
-                    padding: 20px;
+                    padding:20px;
                     cursor: pointer;
                 }
                 h2{
@@ -303,7 +303,6 @@ main{
     .container{
         width: 100%;
         height: auto;
-        background-color:  #D8D5CE;
         background-color: #D8D5CE;
         background-image:
           linear-gradient(
@@ -358,7 +357,7 @@ main{
             }
             width: 45%;
             height: 350px;
-            margin: 10px 10px;
+            margin: 50px 30px;
             overflow: hidden;
             &:nth-child(2n-1){
                 text-align: center;
@@ -374,6 +373,9 @@ main{
                 &:nth-child(7){order: 8;}
                 &:nth-child(8){order: 7;text-align: center;}
                 width: 100%;
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
                 padding: 0 50px; 
                 ;            
             }  
@@ -497,7 +499,7 @@ main{
                 }
                 &:hover h2{
                     opacity: 1;
-                    transition: 0.8s;
+                    transition: 0.3s;
                     background: rgba(0,0,0,.5);
                     width: 100%;
                 }

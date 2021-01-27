@@ -240,7 +240,7 @@ nav .prompt-win {
           animation-iteration-count: infinite;
 }
 
-@media all and (max-width: 1140px) {
+@media all and (max-width: 1200px) {
   nav .prompt-win {
     display: none;
   }
@@ -461,7 +461,7 @@ main .container .banner .floating-windows {
   opacity: 0;
 }
 
-@media all and (max-width: 1140px) {
+@media all and (max-width: 1200px) {
   main .container .banner .floating-windows {
     height: 600px;
   }
@@ -573,7 +573,6 @@ main .container .banner .circle .point:nth-child(2) {
   width: 100%;
   height: auto;
   background-color: #D8D5CE;
-  background-color: #D8D5CE;
   background-image: -webkit-gradient(linear, left top, right top, from(#D8D5CE), color-stop(50%, #D8D5CE), color-stop(0%, #877F7C), color-stop(0%, #877F7C), color-stop(50.1%, #D8D5CE));
   background-image: linear-gradient(to right, #D8D5CE, #D8D5CE 50%, #877F7C 0%, #877F7C 0%, #D8D5CE 50.1%);
   display: -webkit-box;
@@ -586,7 +585,7 @@ main .container .banner .circle .point:nth-child(2) {
   overflow: hidden;
 }
 
-@media all and (max-width: 1140px) {
+@media all and (max-width: 1200px) {
   .product .container {
     background-image: unset;
   }
@@ -623,7 +622,7 @@ main .container .banner .circle .point:nth-child(2) {
 .product .container .cardbox {
   width: 45%;
   height: 350px;
-  margin: 10px 10px;
+  margin: 50px 30px;
   overflow: hidden;
 }
 
@@ -682,9 +681,12 @@ main .container .banner .circle .point:nth-child(2) {
   background-image: url("https://p85.p2.n0.cdn.getcloudapp.com/items/WnuJ7m84/column.gif");
 }
 
-@media all and (max-width: 1140px) {
+@media all and (max-width: 1200px) {
   .product .container .cardbox {
     width: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
     padding: 0 50px;
   }
   .product .container .cardbox:nth-child(1) {
@@ -777,7 +779,7 @@ main .container .banner .circle .point:nth-child(2) {
   }
 }
 
-@media all and (max-width: 1140px) {
+@media all and (max-width: 1200px) {
   .project-feature .container .swipper {
     padding-top: 100px;
     -webkit-clip-path: none;
@@ -846,7 +848,7 @@ main .container .banner .circle .point:nth-child(2) {
   }
 }
 
-@media all and (max-width: 1140px) {
+@media all and (max-width: 1200px) {
   .project-feature .container .swipper .photo {
     width: 48%;
     height: 50%;
@@ -885,7 +887,7 @@ main .container .banner .circle .point:nth-child(2) {
   }
 }
 
-@media all and (max-width: 1140px) {
+@media all and (max-width: 1200px) {
   .project-feature .container .swipper .photo h2 {
     margin-top: unset;
   }
@@ -915,8 +917,8 @@ main .container .banner .circle .point:nth-child(2) {
 
 .project-feature .container .swipper .photo:hover h2 {
   opacity: 1;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
 }
@@ -973,7 +975,7 @@ main .container .banner .circle .point:nth-child(2) {
   }
 }
 
-@media all and (max-width: 1140px) {
+@media all and (max-width: 1200px) {
   .start_use .ig-content {
     height: 500vh;
   }
@@ -996,7 +998,7 @@ main .container .banner .circle .point:nth-child(2) {
   }
 }
 
-@media all and (max-width: 1140px) {
+@media all and (max-width: 1200px) {
   .start_use .ig-content .ig-text {
     width: 80%;
     height: 20%;
